@@ -13,7 +13,7 @@ const reviews = [
     company: "Microsoft",
     comment:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.",
-    photo: "/src/assets/Avatar4.jpg",
+    photo: "../src/assets/Avatar4.jpg",
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const reviews = [
     company: "AWS",
     comment:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.",
-    photo: "/src/assets/Avatar5.jpg",
+    photo: "../src/assets/Avatar5.jpg",
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ const reviews = [
     company: "Google",
     comment:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.",
-    photo: "/src/assets/Avatar6.jpg",
+    photo: "../src/assets/Avatar6.jpg",
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ const reviews = [
     company: "Starbucks",
     comment:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.",
-    photo: "/src/assets/Avatar1.png",
+    photo: "../src/assets/Avatar1.png",
   },
   {
     id: 5,
@@ -45,7 +45,7 @@ const reviews = [
     company: "Louis Vuitton",
     comment:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.",
-    photo: "/src/assets/Avatar2.png",
+    photo: "../src/assets/Avatar2.png",
   },
   {
     id: 6,
@@ -53,7 +53,7 @@ const reviews = [
     company: "McDonald's",
     comment:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.",
-    photo: "/src/assets/Avatar3.png",
+    photo: "../src/assets/Avatar3.png",
   },
 ];
 
