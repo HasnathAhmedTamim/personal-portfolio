@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
+header {
+  z-index: 100001 !important;
+}
+
 .outlineBtn {
   @apply px-4 py-2 bg-transparent text-primary rounded hover:bg-primary hover:text-white transition-all duration-300;
 }
@@ -13,6 +17,6 @@
 }
 
 .skillCard {
-  border-bottom: 3px solid steelblue;
-  border-top: 3px solid steelblue;
+ 
+  border-top: 13px solid steelblue;
 }

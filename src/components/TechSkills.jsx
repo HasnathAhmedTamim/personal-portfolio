@@ -89,7 +89,7 @@ const techSkills = [
 
 const TechSkills = () => {
   return (
-    <div className="lg:mx-12 mx-4 py-32">
+    <div className="lg:mx-12 mx-4 py-32 ">
       <div className="text-blue-900">
         <p className="text-xl font-semibold mb-5">What can I do with </p>
         <h2 className="md:text-5xl text-4xl font-bold mb-5">My Tech Skills</h2>
@@ -99,7 +99,7 @@ const TechSkills = () => {
         {techSkills.map((skill) => (
           <div
             key={skill.id}
-            className="bg-body p-8 rounded-lg cursor-pointer hover:-translate-y-4 transition-none duration-300 skillCard"
+            className="bg-body p-8 rounded-lg cursor-pointer hover:-translate-y-4 transition-all duration-300 skillCard "
           >
             <img
               src={skill.image}
