@@ -89,7 +89,7 @@ const techSkills = [
 
 const TechSkills = () => {
   return (
-    <div className="lg:mx-12 mx-4 py-32 ">
+    <div className="lg:mx-12 mx-4 py-32 " id="techskills">
       <div className="text-blue-900">
         <p className="text-xl font-semibold mb-5">What can I do with </p>
         <h2 className="md:text-5xl text-4xl font-bold mb-5">My Tech Skills</h2>

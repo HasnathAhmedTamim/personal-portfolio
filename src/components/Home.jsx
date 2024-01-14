@@ -1,8 +1,9 @@
+import { FaFacebookF, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import bannerImg from "../assets/tamim2.png";
 
 const Home = () => {
   return (
-    <div className="mt-20 bg-bgShade text-balance">
+    <div className="mt-20 bg-bgShade text-balance" id="home">
       <div className="lg:px-12 px-4 flex flex-col md:flex-row-reverse justify-between  py-24 gap-5 items-center">
         <div className="md:w-1/2 w-full">
           <img className="w-full" src={bannerImg} alt="" />
@@ -22,6 +23,36 @@ const Home = () => {
             molestias distinctio?
           </p>
           <button className="btn-primary">Get In Touch</button>
+          <div className="flex items-center py-6 gap-4 ml-4">
+            <a
+              href="https://www.linkedin.com/in/hasnath-ahmed-tamim/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaLinkedin className="cursor-pointer hover:-translate-y-3 transition-all duration-300 text-xl hover:text-primary" />
+            </a>
+            <a
+              href="https://www.facebook.com/HasnathAhmedTamim/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaFacebookF className="cursor-pointer hover:-translate-y-3 transition-all duration-300 text-xl hover:text-primary" />
+            </a>
+            <a
+              href="https://twitter.com/the_soldierboy"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaTwitter className="cursor-pointer hover:-translate-y-3 transition-all duration-300 text-xl hover:text-primary" />
+            </a>
+            <a
+              href="https://github.com/HasnathAhmedTamim"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaGithub className="cursor-pointer hover:-translate-y-3 transition-all duration-300 text-xl hover:text-primary" />
+            </a>
+          </div>
         </div>
       </div>
     </div>

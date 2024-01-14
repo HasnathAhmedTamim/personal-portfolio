@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { IoLogoGithub } from "react-icons/io5";
 
-
 const PortfolioProjects = () => {
   const [projects, setProjects] = useState([]);
   useEffect(() => {
@@ -10,7 +9,7 @@ const PortfolioProjects = () => {
       .then((data) => setProjects(data));
   }, []);
   return (
-    <div className="lg:mx-12 mx-4 my-32 bg-bgShade p-4">
+    <div className="lg:mx-12 mx-4 my-32 bg-bgShade p-4" id="projects">
       <div className="flex flex-col md:flex-row justify-between mb-20 gap-8 md:items-center">
         <div className="text-blue-900 ">
           <p className="text-xl font-semibold mb-5">Portfolio </p>
@@ -20,7 +19,12 @@ const PortfolioProjects = () => {
         </div>
 
         <button className="px-8 py-5">
-          <a href="#" className="gap-2 items-center flex btn-primary">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/HasnathAhmedTamim"
+            className="gap-2 items-center flex btn-primary"
+          >
             My Github <IoLogoGithub className="w-6 h-6"></IoLogoGithub>
           </a>
         </button>
@@ -43,7 +47,9 @@ const PortfolioProjects = () => {
               <div className="flex gap-4 justify-around  font-semibold">
                 <a
                   className="underline underline-offset-8  hover:text-primary"
-                  href="/"
+                  href={`${project.repo}`}
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   View In Dribble{" "}
                   <img
@@ -55,7 +61,9 @@ const PortfolioProjects = () => {
                 <br />
                 <a
                   className="underline underline-offset-8 hover:text-primary"
-                  href="/"
+                  href={`${project.link}`}
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   Live Link{" "}
                   <img

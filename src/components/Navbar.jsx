@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import { IoMenu } from "react-icons/io5";
+import { Link } from "react-scroll";
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
@@ -41,27 +42,70 @@ const Navbar = () => {
           </div>
           {/* menu item */}
           <div className="lg:flex item-center gap-3 hidden text-body font-semibold">
-            <a href="/" className="block cursor-pointer outlineBtn ">
+            <Link
+              to="home"
+              spy={true}
+              activeClass="active"
+              smooth={true}
+              offset={-100}
+              className="block cursor-pointer outlineBtn "
+            >
               Home
-            </a>
-            <a href="/" className="block cursor-pointer outlineBtn ">
+            </Link>
+            <Link
+              to="techskills"
+              spy={true}
+              activeClass="active"
+              smooth={true}
+              offset={-100}
+              className="block cursor-pointer outlineBtn "
+            >
               Tech Skills
-            </a>
-            <a href="/" className="block cursor-pointer outlineBtn ">
+            </Link>
+            <Link
+              to="about"
+              spy={true}
+              activeClass="active"
+              smooth={true}
+              offset={-100}
+              className="block cursor-pointer outlineBtn "
+            >
               About Me
-            </a>
-            <a href="/" className="block cursor-pointer outlineBtn">
+            </Link>
+            <Link
+              to="projects"
+              spy={true}
+              activeClass="active"
+              smooth={true}
+              offset={-100}
+              className="block cursor-pointer outlineBtn"
+            >
               Projects
-            </a>
-            <a href="/" className="block cursor-pointer outlineBtn">
+            </Link>
+            <Link
+              to="testimonials"
+              spy={true}
+              activeClass="active"
+              smooth={true}
+              offset={-100}
+              className="block cursor-pointer outlineBtn"
+            >
               Testimonials
-            </a>
+            </Link>
           </div>
           {/* contact */}
           <div className=" lg:block hidden">
-            <button className="px-4 py-3 bg-primary text-white text-xl rounded-md hover:bg-body transition-all duration-300 hover:translate-y-5">
-              Contact Me
-            </button>
+            <Link
+              to="contact"
+              spy={true}
+              activeClass="active"
+              smooth={true}
+              offset={-100}
+            >
+              <button className="px-4 py-3 bg-primary text-white text-xl rounded-md hover:bg-body transition-all duration-300 hover:translate-y-5">
+                Contact Me
+              </button>
+            </Link>
           </div>
 
           {/* menu btn for mobile */}
@@ -72,19 +116,22 @@ const Navbar = () => {
         {/* menu item */}
         {isMenuOpen && (
           <div className="mt-4 bg-white rounded-lg text-body p-4">
-            <a href="/" className="block cursor-pointer outlineBtn2 ">
+            <a href="/home" className="block cursor-pointer outlineBtn2 ">
               Home
             </a>
-            <a href="/" className="block cursor-pointer outlineBtn2 ">
+            <a href="/techskills" className="block cursor-pointer outlineBtn2 ">
               Tech Skills
             </a>
-            <a href="/" className="block cursor-pointer outlineBtn2 ">
+            <a href="/about" className="block cursor-pointer outlineBtn2 ">
               About Me
             </a>
-            <a href="/" className="block cursor-pointer outlineBtn2">
+            <a href="/projects" className="block cursor-pointer outlineBtn2">
               Projects
             </a>
-            <a href="/" className="block cursor-pointer outlineBtn2">
+            <a
+              href="/testimonials"
+              className="block cursor-pointer outlineBtn2"
+            >
               Testimonials
             </a>
           </div>

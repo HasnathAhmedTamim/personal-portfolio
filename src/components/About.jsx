@@ -1,7 +1,8 @@
 import profilePic from "../assets/profile3.png";
+// import Resume from "./resume.pdf";
 const About = () => {
   return (
-    <div className="lg:mx-12 mx-4 my-32 bg-bgShade">
+    <div className="lg:mx-12 mx-4 my-32 bg-bgShade" id="about">
       <div className="flex flex-col sm:flex-row md:gap-24 gap-12 items-center justify-between py-10">
         <div className="sm:w-1/2">
           <img src={profilePic} alt="" className=" w-full sm:w-4/6" />
@@ -17,8 +18,21 @@ const About = () => {
             commodi consectetur nam praesentium dolore rem.
           </p>
           <div className="flex gap-5 mt-4 justify-center">
-            <button className="btn-primary">Hire me</button>
-            <button className="btn-primary">Download CV</button>
+            <a
+              href="https://www.linkedin.com/in/hasnath-ahmed-tamim/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className="btn-primary">Hire me</button>
+            </a>
+            <a
+              href="https://drive.google.com/file/d/1KKocP4Ov8dk-tTmpELKFAWxMQpFpfHhT/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+              download
+            >
+              <button className="btn-primary">View CV</button>
+            </a>
           </div>
         </div>
       </div>

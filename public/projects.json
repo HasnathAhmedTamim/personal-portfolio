@@ -1,38 +1,27 @@
 [
   {
     "id": 1,
-    "name": "Ahuse",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-    "image": "/src/assets/project-1.png"
+    "name": "BookShop",
+    "description": "frontend with react and nodejs in backend with mongodb and firebase also",
+    "image": "/src/assets/bookshopproject.PNG",
+    "link": "https://lovely-selkie-1c53f7.netlify.app/",
+    "repo": "https://github.com/HasnathAhmedTamim/simple-bookshop-management-client"
   },
   {
     "id": 2,
-    "name": "App Dashboard",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-    "image": "/src/assets/project-2.png"
+    "name": "Simple Calculator",
+    "description": "Html , css , javascript",
+    "image": "/src/assets/calculatorproject.PNG",
+    "link": "https://hasnathahmedtamim.github.io/SimpleCalculator/",
+    "repo": "https://github.com/HasnathAhmedTamim/SimpleCalculator"
   },
+
   {
     "id": 3,
-    "name": "Easy Rent",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-    "image": "/src/assets/project-3.png"
-  },
-  {
-    "id": 1,
-    "name": "Ahuse",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-    "image": "/src/assets/project-1.png"
-  },
-  {
-    "id": 2,
-    "name": "App Dashboard",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-    "image": "/src/assets/project-2.png"
-  },
-  {
-    "id": 3,
-    "name": "Easy Rent",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-    "image": "/src/assets/project-3.png"
+    "name": "Calculate Weight Other pLanet Rent",
+    "description": "Html , css , javascript",
+    "image": "/src/assets/weightproject.PNG",
+    "link": "https://weightonplanets.netlify.app/",
+    "repo": "https://github.com/HasnathAhmedTamim/weight-calculate-eachPlanet-js"
   }
 ]
