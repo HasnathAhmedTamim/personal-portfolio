@@ -13,7 +13,7 @@ const reviews = [
     company: "Microsoft",
     comment:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.",
-    photo: "../src/assets/Avatar4.jpg",
+    photo: "https://i.ibb.co/nwr51gL/Avatar4.jpg",
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const reviews = [
     company: "AWS",
     comment:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.",
-    photo: "../src/assets/Avatar5.jpg",
+    photo: "https://i.ibb.co/p304Pbr/Avatar5.jpg",
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ const reviews = [
     company: "Google",
     comment:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.",
-    photo: "../src/assets/Avatar6.jpg",
+    photo: "https://i.ibb.co/Lh6GD5K/Avatar6.jpg",
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ const reviews = [
     company: "Starbucks",
     comment:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.",
-    photo: "../src/assets/Avatar1.png",
+    photo: "https://i.ibb.co/Z6VytXx/Avatar3.png",
   },
   {
     id: 5,
@@ -45,7 +45,7 @@ const reviews = [
     company: "Louis Vuitton",
     comment:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.",
-    photo: "../src/assets/Avatar2.png",
+    photo: "https://i.ibb.co/p304Pbr/Avatar5.jpg",
   },
   {
     id: 6,
@@ -53,7 +53,7 @@ const reviews = [
     company: "McDonald's",
     comment:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.",
-    photo: "../src/assets/Avatar3.png",
+    photo: "https://i.ibb.co/nwr51gL/Avatar4.jpg",
   },
 ];
 
@@ -87,7 +87,11 @@ const ReviewCard = () => {
           className="border border-[#006B6A] p-8 rounded"
         >
           <div>
-            <img src="/src/assets/starts.png" alt="" className="h-4" />
+            <img
+              src="https://i.ibb.co/VHJz9YZ/starts.png"
+              alt=""
+              className="h-4"
+            />
             <p className="my-5">{review.comment}</p>
             <div className="flex gap-4 items-center">
               <img src={review.photo} alt="" className="h-10" />

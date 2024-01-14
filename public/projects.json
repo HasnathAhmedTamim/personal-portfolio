@@ -3,7 +3,7 @@
     "id": 1,
     "name": "BookShop",
     "description": "frontend with react and nodejs in backend with mongodb and firebase also",
-    "image": "../src/assets/bookshopproject.PNG",
+    "image": "https://i.ibb.co/qrSy7FM/bookshopproject.png",
     "link": "https://lovely-selkie-1c53f7.netlify.app/",
     "repo": "https://github.com/HasnathAhmedTamim/simple-bookshop-management-client"
   },
@@ -11,7 +11,7 @@
     "id": 2,
     "name": "Simple Calculator",
     "description": "Html , css , javascript",
-    "image": "../src/assets/calculatorproject.PNG",
+    "image": "https://i.ibb.co/M7cxnqh/calculatorproject.png",
     "link": "https://hasnathahmedtamim.github.io/SimpleCalculator/",
     "repo": "https://github.com/HasnathAhmedTamim/SimpleCalculator"
   },
@@ -20,7 +20,7 @@
     "id": 3,
     "name": "Calculate Weight Other pLanet Rent",
     "description": "Html , css , javascript",
-    "image": "../src/assets/weightproject.PNG",
+    "image": "https://i.ibb.co/z8BpWBc/weightproject.png",
     "link": "https://weightonplanets.netlify.app/",
     "repo": "https://github.com/HasnathAhmedTamim/weight-calculate-eachPlanet-js"
   }

@@ -34,56 +34,56 @@ const techSkills = [
     name: "HTML5 & Semantic Markup",
     description:
       "Proficient in creating structured and semantic HTML5 markup for modern web applications.",
-    image: "src/assets/skills-1.png",
+    image: "https://i.ibb.co/zxWKzw3/skills-1.png",
   },
   {
     id: 2,
     name: "CSS3 & Responsive Design",
     description:
       "Skilled in styling web applications using CSS3, including responsive design techniques for various screen sizes.",
-    image: "src/assets/skills-2.png",
+    image: "https://i.ibb.co/t2zmT86/skills-2.png",
   },
   {
     id: 3,
     name: "JavaScript & ES6+",
     description:
       "Experienced in writing JavaScript code, utilizing ES6+ features for building interactive and dynamic user interfaces.",
-    image: "src/assets/skills-3.png",
+    image: "https://i.ibb.co/84rDd9H/skills-3.png",
   },
   {
     id: 4,
     name: "Frontend Frameworks (e.g., React)",
     description:
       "Proficient in using frontend frameworks such as React.js to build scalable and maintainable single-page applications.",
-    image: "src/assets/skills-4.png",
+    image: "https://i.ibb.co/y6NgS0R/skills-4.pngg",
   },
   {
     id: 5,
     name: "Backend Development (e.g., Node.js)",
     description:
       "Familiar with backend development using technologies like Node.js, Express.js, and databases such as MongoDB for building server-side logic.",
-    image: "src/assets/skills-4.png",
+    image: "https://i.ibb.co/y6NgS0R/skills-4.png",
   },
   {
     id: 6,
     name: "APIs & RESTful Services",
     description:
       "Skilled in designing, developing, and consuming APIs, including RESTful services, to enable seamless communication between different parts of a web application.",
-    image: "src/assets/skills-3.png",
+    image: "https://i.ibb.co/84rDd9H/skills-3.png",
   },
   {
     id: 7,
     name: "Responsive Web Design",
     description:
       "Knowledgeable in creating responsive web designs that ensure optimal user experience across various devices and screen sizes.",
-    image: "src/assets/skills-2.png",
+    image: "https://i.ibb.co/t2zmT86/skills-2.png",
   },
   {
     id: 8,
     name: "Version Control (e.g., Git)",
     description:
       "Proficient in using version control systems, such as Git, to track changes, collaborate with team members, and manage code repositories effectively.",
-    image: "src/assets/skills-1.png",
+    image: "https://i.ibb.co/zxWKzw3/skills-1.png",
   },
 ];
 
