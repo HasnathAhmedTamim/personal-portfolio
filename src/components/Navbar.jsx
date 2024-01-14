@@ -22,8 +22,12 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className="w-full items-center justify-between">
-      <nav className={`py-4 md:px-12 px-4 bg-white ${isSticky?"sticky top-0 right-0 left-0 bg-white":""}`}>
+    <header className="w-full fixed top-0 left-0 right-0 items-center justify-between">
+      <nav
+        className={`py-4 md:px-12 px-4 bg-white ${
+          isSticky ? "sticky top-0 right-0 left-0 bg-slate-100" : ""
+        }`}
+      >
         {/* for lg */}
         <div className="flex items-center justify-between">
           {/* logo */}
@@ -55,7 +59,7 @@ const Navbar = () => {
           </div>
           {/* contact */}
           <div className=" lg:block hidden">
-            <button className="px-2 py-2 bg-transparent border border-body text-primary rounded hover:bg-cyan-700 hover:text-white transition-all duration-300 font-semibold">
+            <button className="px-4 py-3 bg-primary text-white text-xl rounded-md hover:bg-body transition-all duration-300 hover:translate-y-5">
               Contact Me
             </button>
           </div>

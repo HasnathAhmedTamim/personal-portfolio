@@ -1,5 +1,8 @@
 import "./App.css";
+import About from "./components/About";
+import Home from "./components/Home";
 import Navbar from "./components/Navbar";
+import TechSkills from "./components/TechSkills";
 
 function App() {
   return (
@@ -8,6 +11,9 @@ function App() {
         Hasnath Ahmed says hello
       </h1> */}
       <Navbar></Navbar>
+      <Home></Home>
+      <TechSkills></TechSkills>
+      <About></About>
     </>
   );
 }
