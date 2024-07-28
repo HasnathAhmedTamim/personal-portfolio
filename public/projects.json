@@ -1,25 +1,45 @@
 [
   {
     "id": 1,
+    "name": "Yoyo Chat",
+    "description": "A chat app developed with Next.js 14, TypeScript, Tailwind CSS, and Convex, featuring secure authentication via Clerk and advanced chat functionalities, including video calls, media sharing, and AI capabilities with Chat GPT and DALL-E-3. Utilizes Zustand for global state management, incorporating Web Hooks and Light/Dark mode for customizable experiences, enabling easy deployment and scalability.",
+    "link": "https://chat-application-ruddy-three.vercel.app/",
+    "repo": "https://github.com/HasnathAhmedTamim/chat-application"
+  },
+  {
+    "id": 2,
+    "name": "User List Application",
+    "description": "User list displayed as a card view from API. Built with React JS, Tailwind CSS, Daisy UI.",
+    "link": "https://dpt-circular3-frontend-developer-ruddy.vercel.app/",
+    "repo": "https://github.com/HasnathAhmedTamim/dpt-circular3-frontend-developer"
+  },
+  {
+    "id": 3,
+    "name": "User Management",
+    "description": "A web app with registration/authentication using React, Firebase, MongoDB, and Node.js. Uses Bootstrap for styling. Authenticated users can access a user management table with checkboxes and actions (Block, Unblock, Delete). Blocked/deleted users are redirected to the login page.",
+    "link": "https://usermanagefirebase.web.app/",
+    "repo": "https://github.com/HasnathAhmedTamim/user-management-task4"
+  },
+  {
+    "id": 4,
     "name": "BookShop",
-    "description": "frontend with react and nodejs in backend with mongodb and firebase also",
+    "description": "Frontend with React and Node.js in backend with MongoDB and Firebase also.",
     "image": "https://i.ibb.co/qrSy7FM/bookshopproject.png",
     "link": "https://lovely-selkie-1c53f7.netlify.app/",
     "repo": "https://github.com/HasnathAhmedTamim/simple-bookshop-management-client"
   },
   {
-    "id": 2,
+    "id": 5,
     "name": "Simple Calculator",
-    "description": "Html , css , javascript",
+    "description": "HTML, CSS, JavaScript.",
     "image": "https://i.ibb.co/M7cxnqh/calculatorproject.png",
     "link": "https://hasnathahmedtamim.github.io/SimpleCalculator/",
     "repo": "https://github.com/HasnathAhmedTamim/SimpleCalculator"
   },
-
   {
-    "id": 3,
-    "name": "Calculate Weight Other pLanet Rent",
-    "description": "Html , css , javascript",
+    "id": 6,
+    "name": "Calculate Weight on Other Planets",
+    "description": "HTML, CSS, JavaScript.",
     "image": "https://i.ibb.co/z8BpWBc/weightproject.png",
     "link": "https://weightonplanets.netlify.app/",
     "repo": "https://github.com/HasnathAhmedTamim/weight-calculate-eachPlanet-js"
