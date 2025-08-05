@@ -1,6 +1,6 @@
 [
   {
-    "id":3,
+    "id": 3,
     "name": "Task Tracker App!",
     "description": "A full-stack task management application with user authentication, real-time updates, and a responsive design.",
     "technologies": ["React", "Node.js", "MongoDB", "JWT", "Vercel"],
@@ -24,7 +24,6 @@
     "image": "/src/assets/usm.png",
     "live": "https://usermanagefirebase.web.app/",
     "repo": "https://github.com/HasnathAhmedTamim/user-management-task4"
-    
   },
   {
     "id": 5,
@@ -42,14 +41,13 @@
     "image": "https://i.ibb.co/qrSy7FM/bookshopproject.png",
     "live": "https://lovely-selkie-1c53f7.netlify.app/",
     "repo": "https://github.com/HasnathAhmedTamim/simple-bookshop-management-client"
-   
   },
   {
     "id": 4,
     "name": "User List Application",
     "description": "Dynamic user information display with card view layout, integrated search functionality, and sorting capabilities. Built with modern React patterns and responsive design using Tailwind CSS and Daisy UI.",
     "technologies": ["React.js", "Tailwind CSS", "Daisy UI", "React Hooks"],
-    "image": "/src/assets/dpt.png",
+    "image": "https://i.ibb.co.com/jk6MSdvB/dpt.png",
     "live": "https://dpt-circular3-frontend-developer-ruddy.vercel.app/",
     "repo": "https://github.com/HasnathAhmedTamim/dpt-circular3-frontend-developer"
   },
@@ -65,7 +63,7 @@
       "Vite"
     ],
 
-    "image": "/src/assets/Mrc.png",
+    "image": "https://i.ibb.co.com/jkc7x3nM/Mrc.png",
     "live": "https://marvel-character-crosshair.netlify.app/",
     "repo": "https://github.com/HasnathAhmedTamim/marvel-rival-characters-crosshair",
     "featured": true
@@ -75,8 +73,8 @@
     "name": "Personal Portfolio",
     "description": "Showcase of my projects and skills as a web developer.",
     "technologies": ["React", "Tailwind CSS", "JavaScript"],
-    "image": "/src/assets/pp.png",
-    "live": "https://weightonplanets.netlify.app/",
+    "image": "https://i.ibb.co.com/Sw2jJzwQ/newpp.png",
+    "live": "https://personal-portfolio-pied-zeta.vercel.app/",
     "repo": "https://github.com/HasnathAhmedTamim/personal-portfolio",
     "featured": true
   }
