@@ -79,7 +79,7 @@ const About = () => {
               </button>
             </a>
             <a
-              href="https://drive.google.com/file/d/1KKocP4Ov8dk-tTmpELKFAWxMQpFpfHhT/view?usp=sharing"
+              href="https://drive.google.com/file/d/1_uAHsGy9dAy0BTnVx8YELVsyosfYm27t/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
               download

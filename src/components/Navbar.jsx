@@ -28,7 +28,7 @@ const Navbar = () => {
     <header className="w-full fixed top-0 left-0 right-0 items-center justify-between z-50">
       <nav
         className={`py-6 md:px-12 px-4 bg-bg-secondary border-b border-gray-700 ${
-          isSticky ? "sticky top-0 right-0 left-0 bg-gray-700 shadow-lg" : ""
+          isSticky ? "sticky top-0 right-0 left-0 bg-slate-800 shadow-lg" : ""
         }`}
       >
         {/* for lg */}
