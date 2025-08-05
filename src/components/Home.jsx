@@ -2,11 +2,6 @@ import { FaFacebookF, FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from "react-
 import { HiDownload } from "react-icons/hi";
 
 const Home = () => {
-  const scrollToContact = () => {
-    const contactSection = document.getElementById('contact');
-    contactSection?.scrollIntoView({ behavior: 'fast' });
-  };
-
   return (
     <div className="mt-20 bg-gray-800 text-balance" id="home">
       <div className="lg:px-12 px-4 flex flex-col justify-center py-24 gap-5 items-center">
@@ -25,7 +20,7 @@ const Home = () => {
               Problem Solver
             </span>
           </h1>
-          <p className="text-gray-300 text-xl leading-9 mb-7 animate-slide-up-delay-2">
+          <p className="text-gray-300 text-xl leading-9 mb-7 animate-slide-up-delay-2 ">
             Full Stack Developer with expertise in React.js, Node.js, and modern
             web technologies. Experienced in building scalable applications from
             real-time chat systems to e-commerce platforms. Currently pursuing
@@ -33,18 +28,18 @@ const Home = () => {
             solutions. Let&apos;s build something amazing together!
           </p>
           <div className="flex flex-wrap gap-4 mb-6 animate-slide-up-delay-3">
-            <button
-              onClick={scrollToContact}
-              className="btn-primary hover:bg-primary/90 transition-colors duration-300 flex items-center gap-2"
+            <a
+              href="mailto:hasnath.tamim@gmail.com?subject=Let's Work Together&body=Hi Hasnath,%0D%0A%0D%0AI would like to discuss a project opportunity with you."
+              className="btn-secondary flex text-white items-center gap-2 hover:bg-gray-300 transition-colors duration-300"
             >
               <FaEnvelope className="w-4 h-4" />
               Get In Touch
-            </button>
+            </a>
             <a
               href="https://drive.google.com/file/d/1epkD9Cnnq0mWAOfkxuKc40a0Hd_Ry31O/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
-              className="btn-secondary flex text-white items-center gap-2 hover:bg-gray-800 transition-colors duration-300"
+              className="btn-secondary flex text-white items-center gap-2 hover:bg-gray-300 transition-colors duration-300"
             >
               <HiDownload className="w-5 h-5 " />
               Download CV

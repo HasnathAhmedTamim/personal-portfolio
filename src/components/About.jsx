@@ -87,7 +87,7 @@ const About = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <button className="btn-primary hover:bg-primary/90 transition-colors duration-300 flex items-center gap-2">
+              <button className="btn-secondary hover:bg-gray-100 transition-colors duration-300 flex items-center gap-2">
                 <FaHandshake />
                 Hire Me
               </button>

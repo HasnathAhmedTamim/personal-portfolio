@@ -40,11 +40,11 @@ const Navbar = () => {
               alt="Hasnath Ahmed Tamim"
               className="w-10 h-10 rounded-full object-cover border-2 border-primary shadow-md hover:scale-110 transition-transform duration-300"
             />
-            <a href="#" className="h-10 flex items-center">
-              <button className="px-4 py-2 font-extrabold hover:bg-bg-tertiary rounded-md text-xl text-text-primary">
+            <Link to="/" className="h-10 flex items-center">
+              <button className="block cursor-pointer outlineBtn">
                 Hasnath Ahmed Tamim
               </button>
-            </a>
+            </Link>
           </div>
           {/* menu item */}
           <div className="lg:flex item-center gap-3 hidden  font-semibold">
@@ -108,7 +108,7 @@ const Navbar = () => {
               <FaLinkedin size={20} />
             </a>
             <a
-              href="https://twitter.com/HasnathAhmed"
+              href="https://x.com/the_soldierboy"
               target="_blank"
               rel="noopener noreferrer"
               className="text-text-secondary hover:text-primary transition-colors hover:-translate-y-1"
@@ -136,30 +136,30 @@ const Navbar = () => {
         {/* menu item */}
         {isMenuOpen && (
           <div className="mt-4 bg-bg-tertiary rounded-lg text-text-primary p-4 border border-gray-600">
-            <a
-              href="/home"
+            <Link
+              to="/home"
               className="block cursor-pointer outlineBtn2 text-text-primary hover:text-primary"
             >
               Home
-            </a>
-            <a
-              href="/techskills"
+            </Link>
+            <Link
+              to="/techskills"
               className="block cursor-pointer outlineBtn2 text-text-primary hover:text-primary"
             >
               Tech Skills
-            </a>
-            <a
-              href="/about"
+            </Link>
+            <Link
+              to="/about"
               className="block cursor-pointer outlineBtn2 text-text-primary hover:text-primary"
             >
               About Me
-            </a>
-            <a
-              href="/projects"
+            </Link>
+            <Link
+              to="/projects"
               className="block cursor-pointer outlineBtn2 text-text-primary hover:text-primary"
             >
               Projects
-            </a>
+            </Link>
             <div className="flex justify-center gap-4 mt-4 pt-4 border-t border-gray-600">
               <a
                 href="https://github.com/HasnathAhmedTamim"
