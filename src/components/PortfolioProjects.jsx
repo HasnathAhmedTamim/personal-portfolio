@@ -7,10 +7,10 @@ const PortfolioProjects = () => {
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  
+
   // Pagination state
   const [currentPage, setCurrentPage] = useState(1);
-  const [projectsPerPage] = useState(3); // Show 3 projects per page
+  const [projectsPerPage] = useState(6); // Show 6 projects per page
 
   useEffect(() => {
     const fetchProjects = async () => {
@@ -18,7 +18,7 @@ const PortfolioProjects = () => {
         setLoading(true);
         const response = await fetch("projects.json");
         if (!response.ok) {
-          throw new Error('Failed to load projects');
+          throw new Error("Failed to load projects");
         }
         const data = await response.json();
         setProjects(data);
@@ -35,16 +35,19 @@ const PortfolioProjects = () => {
   // Pagination calculations
   const indexOfLastProject = currentPage * projectsPerPage;
   const indexOfFirstProject = indexOfLastProject - projectsPerPage;
-  const currentProjects = projects.slice(indexOfFirstProject, indexOfLastProject);
+  const currentProjects = projects.slice(
+    indexOfFirstProject,
+    indexOfLastProject
+  );
   const totalPages = Math.ceil(projects.length / projectsPerPage);
 
   // Pagination handlers
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
     // Smooth scroll to projects section when changing pages
-    document.getElementById('projects').scrollIntoView({ 
-      behavior: 'smooth',
-      block: 'start'
+    document.getElementById("projects").scrollIntoView({
+      behavior: "smooth",
+      block: "start",
     });
   };
 
@@ -62,7 +65,10 @@ const PortfolioProjects = () => {
 
   if (loading) {
     return (
-      <div className="lg:mx-12 mx-4 my-32 bg-bg-secondary p-4 flex justify-center items-center min-h-[400px]" id="projects">
+      <div
+        className="lg:mx-12 mx-4 my-32 bg-bg-secondary p-4 flex justify-center items-center min-h-[400px]"
+        id="projects"
+      >
         <LoadingSpinner size="large" />
       </div>
     );
@@ -73,8 +79,8 @@ const PortfolioProjects = () => {
       <div className="lg:mx-12 mx-4 my-32 bg-bg-secondary p-4" id="projects">
         <div className="text-center">
           <p className="text-red-500 text-xl mb-4">Error loading projects: {error}</p>
-          <button 
-            onClick={() => window.location.reload()} 
+          <button
+            onClick={() => window.location.reload()}
             className="btn-primary"
           >
             Try Again
@@ -86,15 +92,15 @@ const PortfolioProjects = () => {
 
   return (
     <div
-      className="lg:mx-12 mx-4 my-32 bg-bg-secondary p-4 rounded-xl "
+      className="lg:mx-12 mx-4 my-32 bg-bg-secondary p-8 rounded-2xl shadow-xl border border-gray-700/30"
       id="projects"
     >
       <div className="flex flex-col md:flex-row justify-between mb-20 gap-8 md:items-center">
         <div className="text-text-primary">
-          <h2 className="md:text-5xl text-4xl font-bold mb-5">
+          <h2 className="md:text-2xl text-4xl font-bold mb-5">
             My Recent Projects
           </h2>
-          <p className="text-text-secondary text-lg">
+          <p className="text-text-secondary md:text-sm text-lg">
             Here are some of my latest projects showcasing my skills in
             full-stack development, from real-time applications to e-commerce
             solutions.
@@ -114,15 +120,15 @@ const PortfolioProjects = () => {
       </div>
 
       {/* project cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {currentProjects.map((project) => (
           <div
             key={project.id}
-            className={`h-[480px] w-full shadow-lg rounded-lg cursor-pointer hover:scale-105 hover:shadow-md transition-all duration-300 overflow-hidden group flex flex-col ${
+            className={`h-[380px] w-full shadow-lg rounded-lg cursor-pointer hover:scale-105 hover:shadow-md transition-all duration-300 overflow-hidden group flex flex-col ${
               project.featured ? "ring-2 ring-primary/20" : ""
             }`}
           >
-            <div className="relative overflow-hidden h-48 flex-shrink-0">
+            <div className="relative overflow-hidden h-40 flex-shrink-0">
               <img
                 src={project.image || "/src/assets/project-placeholder.png"}
                 alt={`${project.name} project screenshot`}
@@ -138,17 +144,17 @@ const PortfolioProjects = () => {
                 </div>
               )}
             </div>
-            <div className="p-6 bg-slate-900 flex-1 flex flex-col">
-              <h3 className="text-xl font-bold mb-3 text-gray-200 hover:text-primary transition-colors">
+            <div className="p-4 bg-slate-900 flex-1 flex flex-col min-h-0">
+              <h3 className="text-lg font-bold mb-2 text-gray-200 hover:text-primary transition-colors line-clamp-2">
                 {project.name}
               </h3>
-              <p className="text-gray-200 text-justify mb-4 text-sm leading-relaxed flex-1">
+              <p className="text-gray-200 text-justify mb-3 text-sm leading-relaxed flex-1 overflow-hidden">
                 {project.description}
               </p>
 
               {/* Tech stack */}
               {project.technologies && (
-                <div className="mb-4">
+                <div className="mb-3 flex-shrink-0">
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.slice(0, 3).map((tech, index) => (
                       <span
@@ -167,7 +173,7 @@ const PortfolioProjects = () => {
                 </div>
               )}
 
-              <div className="flex gap-3 mt-auto">
+              <div className="flex gap-3 mt-auto flex-shrink-0">
                 <a
                   className="flex items-center gap-2 text-secondary hover:text-secondary/80 font-medium transition-colors text-sm"
                   href={project.repo}

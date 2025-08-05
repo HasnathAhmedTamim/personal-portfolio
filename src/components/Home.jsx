@@ -4,7 +4,7 @@ import { HiDownload } from "react-icons/hi";
 const Home = () => {
   return (
     <div className="mt-20 bg-gray-800 text-balance" id="home">
-      <div className="lg:px-12 px-4 flex flex-col justify-center py-24 gap-5 items-center">
+      <div className="lg:mx-12 mx-4 flex flex-col justify-center py-24 gap-5 items-center">
         <div className="w-full max-w-4xl text-center animate-fade-in-left">
           <h3 className="text-xl text-gray-200 font-semibold mb-5 animate-slide-up">
             👋 Hey! I am Hasnath Ahmed Tamim
@@ -27,7 +27,7 @@ const Home = () => {
             Professional Masters in IT while contributing to innovative software
             solutions. Let&apos;s build something amazing together!
           </p>
-          <div className="flex flex-wrap gap-4 mb-6 animate-slide-up-delay-3">
+          <div className="flex flex-wrap gap-4 mb-6 animate-slide-up-delay-3 item-center  justify-center">
             <a
               href="mailto:hasnath.tamim@gmail.com?subject=Let's Work Together&body=Hi Hasnath,%0D%0A%0D%0AI would like to discuss a project opportunity with you."
               className="btn-secondary flex text-white items-center gap-2 hover:bg-gray-300 transition-colors duration-300"
@@ -45,7 +45,7 @@ const Home = () => {
               Download CV
             </a>
           </div>
-          <div className="flex items-center gap-4 animate-slide-up-delay-4">
+          <div className="flex items-center gap-4 animate-slide-up-delay-4 item-center justify-center">
             <span className="text-gray-200 font-medium">Follow me:</span>
             <a
               href="https://www.linkedin.com/in/hasnath-ahmed-tamim/"

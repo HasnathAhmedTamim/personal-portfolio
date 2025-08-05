@@ -78,6 +78,24 @@
     "image": "https://user-images.githubusercontent.com/59913782/76703775-5ad73100-66fe-11ea-856a-80bf259c281b.png",
     "live": "https://usermanagefirebase.web.app/",
     "repo": "https://github.com/HasnathAhmedTamim/user-management-task4"
+  },
+  {
+    "id": 7,
+    "name": "Dummy E-Commerce Dashboard",
+    "description": "Modern admin dashboard for e-commerce management with analytics, inventory tracking, and order management features.",
+    "technologies": ["React", "Redux", "Chart.js", "Tailwind CSS"],
+    "image": "https://via.placeholder.com/400x300/6366F1/ffffff?text=E-Commerce+Dashboard",
+    "live": "https://example.com",
+    "repo": "https://github.com/example/ecommerce-dashboard"
+  },
+  {
+    "id": 8,
+    "name": "dummy Project",
+    "description": "Real-time weather application with location-based forecasts, interactive maps, and weather alerts.",
+    "technologies": ["React", "Weather API", "Mapbox", "CSS3"],
+    "image": "https://via.placeholder.com/400x300/059669/ffffff?text=Weather+App",
+    "live": "https://example.com",
+    "repo": "https://github.com/example/weather-app"
   }
 
 ]

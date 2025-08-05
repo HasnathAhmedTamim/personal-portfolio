@@ -10,12 +10,12 @@ const About = () => {
   return (
     <div className="lg:mx-12 mx-4 my-32 bg-bg-secondary rounded-xl" id="about">
       <div className="flex flex-col items-center justify-center py-10">
-        <div className="w-full max-w-4xl">
+        <div className="w-full max-w-5xl">
           {/* <p className="text-xl font-semibold mb-5 text-primary text-center">About Me</p> */}
-          <h2 className="md:text-5xl text-4xl font-bold mb-5 text-text-primary text-center">
+          <h2 className="md:text-3xl text-4xl font-bold mb-5 text-text-primary text-center">
             About Me
           </h2>
-          <p className="mt-8 md:pr-8 mb-6 text-justify text-text-secondary leading-relaxed">
+          <p className="mt-8 md:p-2 p-6  text-justify leading-relaxed text-sm">
             I&apos;m a passionate Full Stack Developer with a BSc in Computer
             Science and Engineering from East West University (CGPA 3.23/4.00)
             and currently pursuing a Professional Masters in IT from
@@ -29,7 +29,7 @@ const About = () => {
             executing full software development lifecycles.
           </p>
 
-          <p className="md:pr-8 mb-6 text-justify text-text-secondary leading-relaxed">
+          <p className="mt-8 md:p-2 p-6  text-justify leading-relaxed text-sm">
             My expertise spans modern web technologies including React.js,
             Node.js, MongoDB, and more. I&apos;ve successfully developed
             real-time chat applications, user management systems, and e-commerce
@@ -40,7 +40,7 @@ const About = () => {
           </p>
 
           {/* Education & Experience */}
-          <div className="mb-8">
+          <div className="mb-8 p-8">
             <h3 className="text-lg font-semibold mb-3 text-text-primary flex items-center gap-2">
               <FaGraduationCap className="text-primary" />
               Education & Experience
