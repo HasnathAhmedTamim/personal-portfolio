@@ -41,7 +41,7 @@ const Home = () => {
               Get In Touch
             </button>
             <a
-              href="https://drive.google.com/file/d/1_uAHsGy9dAy0BTnVx8YELVsyosfYm27t/view?usp=sharing"
+              href="https://drive.google.com/file/d/1epkD9Cnnq0mWAOfkxuKc40a0Hd_Ry31O/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
               className="btn-secondary flex text-white items-center gap-2 hover:bg-gray-800 transition-colors duration-300"

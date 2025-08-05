@@ -41,9 +41,9 @@
     "name": "User List Application",
     "description": "Dynamic user information display with card view layout, integrated search functionality, and sorting capabilities. Built with modern React patterns and responsive design using Tailwind CSS and Daisy UI.",
     "technologies": ["React.js", "Tailwind CSS", "Daisy UI", "React Hooks"],
-    "image": "https://i.ibb.co.com/jk6MSdvB/dpt.png",
-    "live": "https://dpt-circular3-frontend-developer-ruddy.vercel.app/",
-    "repo": "https://github.com/HasnathAhmedTamim/dpt-circular3-frontend-developer"
+    "image": "https://i.ibb.co.com/BVwbDqhk/rul.png",
+    "live": "https://react-userlist-application.netlify.app/",
+    "repo": "https://github.com/HasnathAhmedTamim/react-user-hub"
   },
 
   {
