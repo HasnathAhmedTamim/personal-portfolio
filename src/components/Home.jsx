@@ -4,7 +4,7 @@ import { HiDownload } from "react-icons/hi";
 const Home = () => {
   const scrollToContact = () => {
     const contactSection = document.getElementById('contact');
-    contactSection?.scrollIntoView({ behavior: 'smooth' });
+    contactSection?.scrollIntoView({ behavior: 'fast' });
   };
 
   return (

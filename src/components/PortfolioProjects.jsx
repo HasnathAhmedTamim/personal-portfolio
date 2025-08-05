@@ -85,16 +85,19 @@ const PortfolioProjects = () => {
   }
 
   return (
-    <div className="lg:mx-12 mx-4 my-32 bg-bg-secondary p-4 rounded-xl " id="projects">
+    <div
+      className="lg:mx-12 mx-4 my-32 bg-bg-secondary p-4 rounded-xl "
+      id="projects"
+    >
       <div className="flex flex-col md:flex-row justify-between mb-20 gap-8 md:items-center">
         <div className="text-text-primary">
-          
           <h2 className="md:text-5xl text-4xl font-bold mb-5">
             My Recent Projects
           </h2>
           <p className="text-text-secondary text-lg">
-            Here are some of my latest projects showcasing my skills in full-stack development, 
-            from real-time applications to e-commerce solutions.
+            Here are some of my latest projects showcasing my skills in
+            full-stack development, from real-time applications to e-commerce
+            solutions.
           </p>
         </div>
 
@@ -115,17 +118,17 @@ const PortfolioProjects = () => {
         {currentProjects.map((project) => (
           <div
             key={project.id}
-            className={`bg-white shadow-lg rounded-lg cursor-pointer hover:scale-105 hover:shadow-xl transition-all duration-300 overflow-hidden group ${
-              project.featured ? 'ring-2 ring-primary/20' : ''
+            className={`h-[480px] w-full shadow-lg rounded-lg cursor-pointer hover:scale-105 hover:shadow-md transition-all duration-300 overflow-hidden group flex flex-col ${
+              project.featured ? "ring-2 ring-primary/20" : ""
             }`}
           >
-            <div className="relative overflow-hidden">
-              <img 
-                src={project.image || '/src/assets/project-placeholder.png'} 
+            <div className="relative overflow-hidden h-48 flex-shrink-0">
+              <img
+                src={project.image || "/src/assets/project-placeholder.png"}
                 alt={`${project.name} project screenshot`}
-                className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 onError={(e) => {
-                  e.target.src = '/src/assets/project-placeholder.png';
+                  e.target.src = "/src/assets/project-placeholder.png";
                 }}
               />
               <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -135,20 +138,20 @@ const PortfolioProjects = () => {
                 </div>
               )}
             </div>
-            <div className="p-6">
-              <h3 className="text-xl font-bold mb-3 text-gray-600 hover:text-primary transition-colors">
+            <div className="p-6 bg-slate-900 flex-1 flex flex-col">
+              <h3 className="text-xl font-bold mb-3 text-gray-200 hover:text-primary transition-colors">
                 {project.name}
               </h3>
-              <p className="text-gray-400 text-justify mb-4 text-sm leading-relaxed">
+              <p className="text-gray-200 text-justify mb-4 text-sm leading-relaxed flex-1">
                 {project.description}
               </p>
-              
+
               {/* Tech stack */}
               {project.technologies && (
                 <div className="mb-4">
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.slice(0, 3).map((tech, index) => (
-                      <span 
+                      <span
                         key={index}
                         className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full font-medium"
                       >
@@ -163,10 +166,10 @@ const PortfolioProjects = () => {
                   </div>
                 </div>
               )}
-              
-              <div className="flex gap-3">
+
+              <div className="flex gap-3 mt-auto">
                 <a
-                  className="flex items-center gap-2 text-primary hover:text-primary/80 font-medium transition-colors text-sm"
+                  className="flex items-center gap-2 text-secondary hover:text-secondary/80 font-medium transition-colors text-sm"
                   href={project.repo}
                   target="_blank"
                   rel="noreferrer"
@@ -177,7 +180,7 @@ const PortfolioProjects = () => {
                 </a>
                 {project.live && (
                   <a
-                    className="flex items-center gap-2 text-primary hover:text-primary/80 font-medium transition-colors text-sm"
+                    className="flex items-center gap-2 text-secondary hover:text-secondary/80 font-medium transition-colors text-sm"
                     href={project.live}
                     target="_blank"
                     rel="noreferrer"
@@ -202,8 +205,8 @@ const PortfolioProjects = () => {
             disabled={currentPage === 1}
             className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-all duration-300 ${
               currentPage === 1
-                ? 'bg-gray-700 text-gray-500 cursor-not-allowed'
-                : 'bg-bg-tertiary text-text-secondary hover:bg-primary hover:text-white'
+                ? "bg-gray-700 text-gray-500 cursor-not-allowed"
+                : "bg-bg-tertiary text-text-secondary hover:bg-primary hover:text-white"
             }`}
           >
             <FiChevronLeft className="w-4 h-4" />
@@ -215,15 +218,15 @@ const PortfolioProjects = () => {
             {Array.from({ length: totalPages }, (_, index) => {
               const pageNumber = index + 1;
               const isCurrentPage = pageNumber === currentPage;
-              
+
               return (
                 <button
                   key={pageNumber}
                   onClick={() => handlePageChange(pageNumber)}
                   className={`w-10 h-10 rounded-lg font-medium transition-all duration-300 ${
                     isCurrentPage
-                      ? 'bg-primary text-white shadow-lg'
-                      : 'bg-bg-tertiary text-text-secondary hover:bg-primary/20 hover:text-primary'
+                      ? "bg-primary text-white shadow-lg"
+                      : "bg-bg-tertiary text-text-secondary hover:bg-primary/20 hover:text-primary"
                   }`}
                 >
                   {pageNumber}
@@ -238,8 +241,8 @@ const PortfolioProjects = () => {
             disabled={currentPage === totalPages}
             className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-all duration-300 ${
               currentPage === totalPages
-                ? 'bg-gray-700 text-gray-500 cursor-not-allowed'
-                : 'bg-bg-tertiary text-text-secondary hover:bg-primary hover:text-white'
+                ? "bg-gray-700 text-gray-500 cursor-not-allowed"
+                : "bg-bg-tertiary text-text-secondary hover:bg-primary hover:text-white"
             }`}
           >
             Next
@@ -252,14 +255,18 @@ const PortfolioProjects = () => {
       {projects.length > 0 && (
         <div className="text-center mt-6">
           <p className="text-text-tertiary text-sm">
-            Showing {indexOfFirstProject + 1}-{Math.min(indexOfLastProject, projects.length)} of {projects.length} projects
+            Showing {indexOfFirstProject + 1}-
+            {Math.min(indexOfLastProject, projects.length)} of {projects.length}{" "}
+            projects
           </p>
         </div>
       )}
 
       {projects.length === 0 && !loading && (
         <div className="text-center py-12">
-          <p className="text-text-secondary text-lg">No projects found. Check back soon for updates!</p>
+          <p className="text-text-secondary text-lg">
+            No projects found. Check back soon for updates!
+          </p>
         </div>
       )}
     </div>
