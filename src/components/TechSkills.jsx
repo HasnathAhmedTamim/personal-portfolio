@@ -1,116 +1,136 @@
-// const techSkills = [
-//   {
-//     id: 1,
-//     name: "Strategy & Direction",
-//     description:
-//       "sadsdsdwnjsnd ansjdnasjdajsdbasbdjabsjdabsdjasdbajskdbasjd??????sdasdasdasdsadas",
-//     image: "src/assets/skills-1.png",
-//   },
-//   {
-//     id: 2,
-//     name: "Branding & Logo",
-//     description:
-//       "sadsdsdwnjsnd ansjdnasjdajsdbasbdjabsjdabsdjasdbajskdbasjd??????sdasdasdasdsadas",
-//     image: "src/assets/skills-2.png",
-//   },
-//   {
-//     id: 3,
-//     name: "UI & UX",
-//     description:
-//       "sadsdsdwnjsnd ansjdnasjdajsdbasbdjabsjdabsdjasdbajskdbasjd??????sdasdasdasdsadas",
-//     image: "src/assets/skills-3.png",
-//   },
-//   {
-//     id: 4,
-//     name: "Webflow & Development",
-//     description:
-//       "sadsdsdwnjsnd ansjdnasjdajsdbasbdjabsjdabsdjasdbajskdbasjd??????sdasdasdasdsadas",
-//     image: "src/assets/skills-4.png",
-//   },
-// ];
-const techSkills = [
+
+import { 
+  FaReact, 
+  FaNodeJs, 
+  FaJs, 
+  FaHtml5, 
+  FaCss3Alt, 
+  FaGithub
+} from "react-icons/fa";
+import { 
+  SiNextdotjs, 
+  SiTypescript, 
+  SiTailwindcss, 
+  SiExpress, 
+  SiMongodb,
+  SiFirebase
+} from "react-icons/si";
+import { 
+  BsPerson, 
+  BsLightbulb, 
+  BsPeople, 
+  BsChatDots, 
+  BsClock, 
+  BsLightning 
+} from "react-icons/bs";
+
+const skillCategories = [
   {
-    id: 1,
-    name: "HTML5 & Semantic Markup",
-    description:
-      "Proficient in creating structured and semantic HTML5 markup for modern web applications.",
-    image: "https://i.ibb.co/zxWKzw3/skills-1.png",
+    title: "Frontend",
+    skills: [
+      { name: "React.js", icon: FaReact, color: "text-blue-500" },
+      { name: "Next.js 14", icon: SiNextdotjs, color: "text-gray-200" },
+      { name: "JavaScript", icon: FaJs, color: "text-yellow-500" },
+      { name: "TypeScript", icon: SiTypescript, color: "text-blue-600" },
+      { name: "Tailwind CSS", icon: SiTailwindcss, color: "text-cyan-500" },
+      { name: "HTML5", icon: FaHtml5, color: "text-orange-500" },
+      { name: "CSS3", icon: FaCss3Alt, color: "text-blue-500" }
+    ]
   },
   {
-    id: 2,
-    name: "CSS3 & Responsive Design",
-    description:
-      "Skilled in styling web applications using CSS3, including responsive design techniques for various screen sizes.",
-    image: "https://i.ibb.co/t2zmT86/skills-2.png",
+    title: "Backend & Database",
+    skills: [
+      { name: "Node.js", icon: FaNodeJs, color: "text-green-500" },
+      { name: "Express.js", icon: SiExpress, color: "text-gray-200" },
+      { name: "MongoDB", icon: SiMongodb, color: "text-green-600" },
+      { name: "Firebase", icon: SiFirebase, color: "text-orange-500" },
+      { name: "Git & GitHub", icon: FaGithub, color: "text-gray-200" }
+    ]
   },
   {
-    id: 3,
-    name: "JavaScript & ES6+",
-    description:
-      "Experienced in writing JavaScript code, utilizing ES6+ features for building interactive and dynamic user interfaces.",
-    image: "https://i.ibb.co/84rDd9H/skills-3.png",
-  },
-  {
-    id: 4,
-    name: "Frontend Frameworks (e.g., React)",
-    description:
-      "Proficient in using frontend frameworks such as React.js to build scalable and maintainable single-page applications.",
-    image: "https://i.ibb.co/y6NgS0R/skills-4.pngg",
-  },
-  {
-    id: 5,
-    name: "Backend Development (e.g., Node.js)",
-    description:
-      "Familiar with backend development using technologies like Node.js, Express.js, and databases such as MongoDB for building server-side logic.",
-    image: "https://i.ibb.co/y6NgS0R/skills-4.png",
-  },
-  {
-    id: 6,
-    name: "APIs & RESTful Services",
-    description:
-      "Skilled in designing, developing, and consuming APIs, including RESTful services, to enable seamless communication between different parts of a web application.",
-    image: "https://i.ibb.co/84rDd9H/skills-3.png",
-  },
-  {
-    id: 7,
-    name: "Responsive Web Design",
-    description:
-      "Knowledgeable in creating responsive web designs that ensure optimal user experience across various devices and screen sizes.",
-    image: "https://i.ibb.co/t2zmT86/skills-2.png",
-  },
-  {
-    id: 8,
-    name: "Version Control (e.g., Git)",
-    description:
-      "Proficient in using version control systems, such as Git, to track changes, collaborate with team members, and manage code repositories effectively.",
-    image: "https://i.ibb.co/zxWKzw3/skills-1.png",
-  },
+    title: "Soft Skills",
+    skills: [
+      { name: "Leadership", icon: BsPerson, color: "text-purple-500" },
+      { name: "Problem Solving", icon: BsLightbulb, color: "text-pink-500" },
+      { name: "Teamwork", icon: BsPeople, color: "text-indigo-500" },
+      { name: "Communication", icon: BsChatDots, color: "text-blue-500" },
+      { name: "Time Management", icon: BsClock, color: "text-green-500" },
+      { name: "Adaptability", icon: BsLightning, color: "text-yellow-500" }
+    ]
+  }
 ];
 
 const TechSkills = () => {
   return (
-    <div className="lg:mx-12 mx-4 py-32 " id="techskills">
-      <div className="text-blue-900">
-        <p className="text-xl font-semibold mb-5">What can I do with </p>
-        <h2 className="md:text-5xl text-4xl font-bold mb-5">My Tech Skills</h2>
+    <div className="lg:px-12 px-4 my-32 bg-bg-primary" id="techskills">
+      <div className="mb-20 text-center">
+       
+        <h2 className="md:text-5xl text-4xl text-text-primary font-bold mb-5">
+          Technical Expertise
+        </h2>
+        <p className="text-text-secondary text-lg max-w-3xl mx-auto">
+          A comprehensive overview of my technical skills and professional competencies 
+          gained through education, hands-on projects, and industry experience.
+        </p>
       </div>
-      {/* skill card */}
-      <div className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-8 text-bgShade">
-        {techSkills.map((skill) => (
-          <div
-            key={skill.id}
-            className="bg-body p-8 rounded-lg cursor-pointer hover:-translate-y-4 transition-all duration-300 skillCard "
+
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+        {skillCategories.map((category, categoryIndex) => (
+          <div 
+            key={categoryIndex}
+            className="bg-bg-secondary rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 border border-gray-700"
           >
-            <img
-              src={skill.image}
-              alt=""
-              className="w-14 h-13 bg-white rounded-lg shadow-md mb-7"
-            />
-            <h1 className="text-xl font-bold mb-4"> {skill.name} </h1>
-            <p> {skill.description} </p>
+            <h3 className="text-2xl font-bold text-text-primary mb-8 text-center border-b border-gray-700 pb-4">
+              {category.title}
+            </h3>
+            
+            <div className="grid grid-cols-2 gap-6">
+              {category.skills.map((skill, skillIndex) => {
+                const IconComponent = skill.icon;
+                return (
+                  <div 
+                    key={skillIndex}
+                    className="flex flex-col items-center p-4 rounded-lg hover:bg-bg-tertiary transition-all duration-300 group cursor-pointer"
+                  >
+                    <div className={`text-4xl mb-3 ${skill.color} group-hover:scale-110 transition-transform duration-300`}>
+                      <IconComponent />
+                    </div>
+                    <span className="text-sm font-medium text-center text-text-primary group-hover:text-primary transition-colors duration-300">
+                      {skill.name}
+                    </span>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         ))}
       </div>
+
+      {/* Experience Highlight */}
+      {/* <div className="mt-20 bg-gradient-to-r from-dark-surface to-dark-card rounded-xl p-8 text-center border border-dark-border">
+        <h3 className="text-2xl font-bold text-dark-text mb-4">
+          Professional Experience
+        </h3>
+        <p className="text-dark-textSecondary text-lg mb-6 max-w-3xl mx-auto">
+          <span className="font-semibold text-primary">Intern Developer at Itransition Group</span> (Jul-Sep 2024) - 
+          Gained hands-on experience in software development lifecycle, solving complex programming tasks, 
+          and collaborating with development teams in an enterprise environment.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+          <div className="bg-dark-surface p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border border-dark-border">
+            <h4 className="font-bold text-primary text-lg mb-2">Education</h4>
+            <p className="text-sm text-dark-textSecondary">BSc Computer Science & Engineering<br />East West University</p>
+          </div>
+          <div className="bg-dark-surface p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border border-dark-border">
+            <h4 className="font-bold text-primary text-lg mb-2">Current Study</h4>
+            <p className="text-sm text-dark-textSecondary">Professional Masters in IT<br />Jahangirnagar University</p>
+          </div>
+          <div className="bg-dark-surface p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border border-dark-border">
+            <h4 className="font-bold text-primary text-lg mb-2">Research</h4>
+            <p className="text-sm text-dark-textSecondary">Published in ICO2023<br />Machine Learning in Cloud Computing</p>
+          </div>
+        </div>
+      </div> */}
     </div>
   );
 };

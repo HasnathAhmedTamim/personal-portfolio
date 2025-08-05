@@ -1,47 +1,83 @@
 [
   {
-    "id": 1,
-    "name": "Yoyo Chat",
-    "description": "A chat app developed with Next.js 14, TypeScript, Tailwind CSS, and Convex, featuring secure authentication via Clerk and advanced chat functionalities, including video calls, media sharing, and AI capabilities with Chat GPT and DALL-E-3. Utilizes Zustand for global state management, incorporating Web Hooks and Light/Dark mode for customizable experiences, enabling easy deployment and scalability.",
-    "link": "https://chat-application-ruddy-three.vercel.app/",
-    "repo": "https://github.com/HasnathAhmedTamim/chat-application"
-  },
-  {
-    "id": 2,
-    "name": "User List Application",
-    "description": "User list displayed as a card view from API. Built with React JS, Tailwind CSS, Daisy UI.",
-    "link": "https://dpt-circular3-frontend-developer-ruddy.vercel.app/",
-    "repo": "https://github.com/HasnathAhmedTamim/dpt-circular3-frontend-developer"
-  },
-  {
-    "id": 3,
-    "name": "User Management",
-    "description": "A web app with registration/authentication using React, Firebase, MongoDB, and Node.js. Uses Bootstrap for styling. Authenticated users can access a user management table with checkboxes and actions (Block, Unblock, Delete). Blocked/deleted users are redirected to the login page.",
-    "link": "https://usermanagefirebase.web.app/",
-    "repo": "https://github.com/HasnathAhmedTamim/user-management-task4"
-  },
-  {
-    "id": 4,
-    "name": "BookShop",
-    "description": "Frontend with React and Node.js in backend with MongoDB and Firebase also.",
-    "image": "https://i.ibb.co/qrSy7FM/bookshopproject.png",
-    "link": "https://lovely-selkie-1c53f7.netlify.app/",
-    "repo": "https://github.com/HasnathAhmedTamim/simple-bookshop-management-client"
-  },
-  {
-    "id": 5,
-    "name": "Simple Calculator",
-    "description": "HTML, CSS, JavaScript.",
-    "image": "https://i.ibb.co/M7cxnqh/calculatorproject.png",
-    "link": "https://hasnathahmedtamim.github.io/SimpleCalculator/",
-    "repo": "https://github.com/HasnathAhmedTamim/SimpleCalculator"
+    "id":3,
+    "name": "Task Tracker App!",
+    "description": "A full-stack task management application with user authentication, real-time updates, and a responsive design.",
+    "technologies": ["React", "Node.js", "MongoDB", "JWT", "Vercel"],
+    "image": "https://media.licdn.com/dms/image/v2/D562DAQHPeYo-2Yd0SA/profile-treasury-image-shrink_1920_1920/B56ZgwnjKdG4Ac-/0/1753162331347?e=1755014400&v=beta&t=njwu_NsgLNYiHCOZD5eZaSoWDb8N-AxBo3Dl5qiHm78",
+    "live": "https://task-tracker-app-opal.vercel.app/",
+    "repo": "https://github.com/HasnathAhmedTamim/DevsNestOPC-TaskTracker-App",
+    "featured": true
   },
   {
     "id": 6,
-    "name": "Calculate Weight on Other Planets",
-    "description": "HTML, CSS, JavaScript.",
-    "image": "https://i.ibb.co/z8BpWBc/weightproject.png",
-    "link": "https://weightonplanets.netlify.app/",
-    "repo": "https://github.com/HasnathAhmedTamim/weight-calculate-eachPlanet-js"
+    "name": "User Management System",
+    "description": "Full-stack web application with Firebase authentication, user registration, and comprehensive admin panel for user management including block/unblock/delete operations. Built with React and Node.js backend.",
+    "technologies": [
+      "React.js",
+      "Firebase",
+      "Bootstrap",
+      "Node.js",
+      "Express.js",
+      "MongoDB"
+    ],
+    "image": "/src/assets/usm.png",
+    "live": "https://usermanagefirebase.web.app/",
+    "repo": "https://github.com/HasnathAhmedTamim/user-management-task4"
+    
+  },
+  {
+    "id": 5,
+    "name": "Bookshop Management System",
+    "description": "Responsive e-commerce book shop with React frontend and Node.js backend. Features include book inventory management, user authentication, and RESTful API integration with MongoDB database.",
+    "technologies": [
+      "React.js",
+      "Context API",
+      "React Router",
+      "Node.js",
+      "Express.js",
+      "Firebase",
+      "MongoDB"
+    ],
+    "image": "https://i.ibb.co/qrSy7FM/bookshopproject.png",
+    "live": "https://lovely-selkie-1c53f7.netlify.app/",
+    "repo": "https://github.com/HasnathAhmedTamim/simple-bookshop-management-client"
+   
+  },
+  {
+    "id": 4,
+    "name": "User List Application",
+    "description": "Dynamic user information display with card view layout, integrated search functionality, and sorting capabilities. Built with modern React patterns and responsive design using Tailwind CSS and Daisy UI.",
+    "technologies": ["React.js", "Tailwind CSS", "Daisy UI", "React Hooks"],
+    "image": "/src/assets/dpt.png",
+    "live": "https://dpt-circular3-frontend-developer-ruddy.vercel.app/",
+    "repo": "https://github.com/HasnathAhmedTamim/dpt-circular3-frontend-developer"
+  },
+  {
+    "id": 2,
+    "name": "Marvel Rivals Crosshair Showcase",
+    "description": "Showcase of Marvel characters with crosshair effects.",
+    "technologies": [
+      "React.js",
+      "Tailwind CSS",
+      "Daisy UI",
+      "JavaScript",
+      "Vite"
+    ],
+
+    "image": "/src/assets/Mrc.png",
+    "live": "https://marvel-character-crosshair.netlify.app/",
+    "repo": "https://github.com/HasnathAhmedTamim/marvel-rival-characters-crosshair",
+    "featured": true
+  },
+  {
+    "id": 1,
+    "name": "Personal Portfolio",
+    "description": "Showcase of my projects and skills as a web developer.",
+    "technologies": ["React", "Tailwind CSS", "JavaScript"],
+    "image": "/src/assets/pp.png",
+    "live": "https://weightonplanets.netlify.app/",
+    "repo": "https://github.com/HasnathAhmedTamim/personal-portfolio",
+    "featured": true
   }
 ]
