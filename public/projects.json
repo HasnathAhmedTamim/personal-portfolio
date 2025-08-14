@@ -36,14 +36,21 @@
     "repo": "https://github.com/HasnathAhmedTamim/DevsNestOPC-TaskTracker-App",
     "featured": true
   },
-   {
+  {
     "id": 4,
-    "name": "User List Application",
-    "description": "Dynamic user information display with card view layout, integrated search functionality, and sorting capabilities. Built with modern React patterns and responsive design using Tailwind CSS and Daisy UI.",
-    "technologies": ["React.js", "Tailwind CSS", "Daisy UI", "React Hooks"],
-    "image": "https://i.ibb.co.com/BVwbDqhk/rul.png",
-    "live": "https://react-userlist-application.netlify.app/",
-    "repo": "https://github.com/HasnathAhmedTamim/react-user-hub"
+    "name": "FPL News Portal",
+    "description": "Your ultimate hub for all things Fantasy Premier League! Features real-time FPL news updates, points calculator, player performance analysis, and fixture difficulty. Built with modern technologies and mobile-first responsive design with glassmorphism UI and custom dark/light mode transitions.",
+    "technologies": [
+      "Next.js 15",
+      "React 19",
+      "TypeScript",
+      "Tailwind CSS",
+      "Radix UI"
+    ],
+    "image": "https://media.licdn.com/dms/image/v2/D562DAQGheZUab-Ry2A/profile-treasury-image-shrink_8192_8192/B56ZiAuZ5rHMAk-/0/1754506306210?e=1755766800&v=beta&t=IehXveUfO_bqXyxkhfUSE6Z38Ylo9f7vOcccyBlUv0g",
+    "live": "https://fpl-news-portal-nextjs.vercel.app/",
+    "repo": "https://github.com/HasnathAhmedTamim/fpl-news-portal-nextjs",
+    "featured": true
   },
 
   {
@@ -81,12 +88,12 @@
   },
   {
     "id": 7,
-    "name": "Dummy E-Commerce Dashboard",
-    "description": "Modern admin dashboard for e-commerce management with analytics, inventory tracking, and order management features.",
-    "technologies": ["React", "Redux", "Chart.js", "Tailwind CSS"],
-    "image": "https://via.placeholder.com/400x300/6366F1/ffffff?text=E-Commerce+Dashboard",
-    "live": "https://example.com",
-    "repo": "https://github.com/example/ecommerce-dashboard"
+    "name": "User List Application",
+    "description": "Dynamic user information display with card view layout, integrated search functionality, and sorting capabilities. Built with modern React patterns and responsive design using Tailwind CSS and Daisy UI.",
+    "technologies": ["React.js", "Tailwind CSS", "Daisy UI", "React Hooks"],
+    "image": "https://i.ibb.co.com/BVwbDqhk/rul.png",
+    "live": "https://react-userlist-application.netlify.app/",
+    "repo": "https://github.com/HasnathAhmedTamim/react-user-hub"
   },
   {
     "id": 8,
