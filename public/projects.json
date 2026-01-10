@@ -97,12 +97,12 @@
   },
   {
     "id": 8,
-    "name": "dummy Project",
-    "description": "Real-time weather application with location-based forecasts, interactive maps, and weather alerts.",
-    "technologies": ["React", "Weather API", "Mapbox", "CSS3"],
-    "image": "https://via.placeholder.com/400x300/059669/ffffff?text=Weather+App",
-    "live": "https://example.com",
-    "repo": "https://github.com/example/weather-app"
+    "name": "Rainwater Convention Website",
+    "description": "A 4-page event website (Home, FAQs, Registration, Admin) with participant registration form, client-side validation, and admin portal for managing registrations. Features localStorage persistence and SweetAlert2 modals.",
+    "technologies": ["React", "Vite", "React Router", "Tailwind CSS", "SweetAlert2", "localStorage"],
+    "image": "https://i.ibb.co.com/nqkgFbSj/rainwater.png",
+    "live": "https://assignment1-rainwater-website.vercel.app/",
+    "repo": "https://github.com/HasnathAhmedTamim/Assignment1_RainwaterWebsite"
   }
 
 ]
