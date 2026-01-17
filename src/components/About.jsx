@@ -19,14 +19,13 @@ const About = () => {
             I&apos;m a passionate Full Stack Developer with a BSc in Computer
             Science and Engineering from East West University (CGPA 3.23/4.00)
             and currently pursuing a Professional Masters in IT from
-            Jahangirnagar University. With hands-on experience as an Intern
-            Developer at
+            Jahangirnagar University. Currently, I&apos;m working as an Intern
+            Software Developer at
             <span className="font-semibold text-primary">
               {" "}
-              Itransition Group
+              Fiber @ Home
             </span>
-            , I&apos;ve worked on solving complex programming tasks and
-            executing full software development lifecycles.
+            , where I develop responsive frontends with Next.js, robust backends, and mobile applications using Android with Kotlin & Jetpack Compose.
           </p>
 
           <p className="mt-8 md:p-2 p-6  text-justify leading-relaxed text-sm">
@@ -46,6 +45,23 @@ const About = () => {
               Education & Experience
             </h3>
             <div className="space-y-4 text-sm">
+              <div className="flex items-start gap-3 p-4 bg-bg-tertiary rounded-lg shadow-sm border border-gray-700">
+                <FaBriefcase className="text-primary mt-1 flex-shrink-0" />
+                <div className="flex-1">
+                  <div className="flex justify-between items-start mb-1">
+                    <p className="font-medium text-text-primary">
+                       Software Developer - Fiber @ Home
+                    </p>
+                    <span className="text-primary font-medium flex items-center gap-1">
+                      <FaCalendarAlt className="text-xs" />
+                      Dec 17 - Present
+                    </span>
+                  </div>
+                  <p className="text-text-secondary">
+                    Next.js, Backend, and Android (Kotlin & Jetpack Compose) development
+                  </p>
+                </div>
+              </div>
               <div className="flex items-start gap-3 p-4 bg-bg-tertiary rounded-lg shadow-sm border border-gray-700">
                 <FaBriefcase className="text-primary mt-1 flex-shrink-0" />
                 <div className="flex-1">
@@ -93,7 +109,7 @@ const About = () => {
               </button>
             </a>
             <a
-              href="https://drive.google.com/file/d/1epkD9Cnnq0mWAOfkxuKc40a0Hd_Ry31O/view?usp=sharing"
+              href="https://drive.google.com/file/d/1d_ha6Th3PlAy6OWkKybXm_IZHCgAnl8c/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
               download
