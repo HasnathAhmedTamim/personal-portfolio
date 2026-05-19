@@ -28,16 +28,26 @@
   },
   {
     "id": 3,
-    "name": "Task Tracker App!",
-    "description": "A full-stack task management application with user authentication, real-time updates, and a responsive design.",
-    "technologies": ["React", "Node.js", "MongoDB", "JWT", "Vercel"],
-    "image": "https://media.licdn.com/dms/image/v2/D562DAQHPeYo-2Yd0SA/profile-treasury-image-shrink_1920_1920/B56ZgwnjKdG4Ac-/0/1753162331347?e=1755014400&v=beta&t=njwu_NsgLNYiHCOZD5eZaSoWDb8N-AxBo3Dl5qiHm78",
-    "live": "https://task-tracker-app-opal.vercel.app/",
-    "repo": "https://github.com/HasnathAhmedTamim/DevsNestOPC-TaskTracker-App",
+    "name": "FC26 Auction",
+    "description": "Real-time football player auction platform built with Next.js App Router, NextAuth, MongoDB, and Socket.IO. Features manager registration, live auctions with real-time bidding, lineup management, achievements tracking, admin controls, and tournament fixtures with full role-based access control.",
+    "technologies": ["Next.js 16", "React 19", "NextAuth", "MongoDB", "Socket.IO", "Tailwind CSS", "TypeScript", "Zod", "Vitest", "ESLint"],
+    "image": "https://i.ibb.co.com/dJ2BNKDN/fc26.png",
+    "live": "https://fc26-test-auctions.vercel.app/",
+    "repo": "https://github.com/HasnathAhmedTamim/fc26-test-auctions",
     "featured": true
   },
   {
     "id": 4,
+    "name": "Demo-Cafe",
+    "description": "ArenaX — a gaming & esports e-commerce platform built with Next.js 16 and TypeScript. Features product catalog, persistent cart, validated checkout (Zod), PDF receipts, and a modular feature structure.",
+    "technologies": ["Next.js 16", "TypeScript", "Tailwind CSS", "Radix UI", "Zustand", "React Hook Form", "Zod", "Framer Motion"],
+    "image": "https://i.ibb.co.com/LDJbt6hk/arenax.png",
+    "live": "https://demo-cafe-seven.vercel.app/",
+    "repo": "https://github.com/HasnathAhmedTamim/Demo-Cafe",
+    "featured": true
+  },
+  {
+    "id": 5,
     "name": "FPL News Portal",
     "description": "Your ultimate hub for all things Fantasy Premier League! Features real-time FPL news updates, points calculator, player performance analysis, and fixture difficulty. Built with modern technologies and mobile-first responsive design with glassmorphism UI and custom dark/light mode transitions.",
     "technologies": [
@@ -47,14 +57,14 @@
       "Tailwind CSS",
       "Radix UI"
     ],
-    "image": "https://media.licdn.com/dms/image/v2/D562DAQGheZUab-Ry2A/profile-treasury-image-shrink_8192_8192/B56ZiAuZ5rHMAk-/0/1754506306210?e=1755766800&v=beta&t=IehXveUfO_bqXyxkhfUSE6Z38Ylo9f7vOcccyBlUv0g",
+    "image": "https://i.ibb.co.com/JRtLHp8z/fplporta.png",
     "live": "https://fpl-news-portal-nextjs.vercel.app/",
     "repo": "https://github.com/HasnathAhmedTamim/fpl-news-portal-nextjs",
     "featured": true
   },
 
   {
-    "id": 5,
+    "id": 6,
     "name": "Bookshop Management System",
     "description": "Responsive e-commerce book shop with React frontend and Node.js backend. Features include book inventory management, user authentication, and RESTful API integration with MongoDB database.",
     "technologies": [
@@ -70,39 +80,32 @@
     "live": "https://lovely-selkie-1c53f7.netlify.app/",
     "repo": "https://github.com/HasnathAhmedTamim/simple-bookshop-management-client"
   },
-  {
-    "id": 6,
-    "name": "User Management System",
-    "description": "Full-stack web application with Firebase authentication, user registration, and comprehensive admin panel for user management including block/unblock/delete operations. Built with React and Node.js backend.",
-    "technologies": [
-      "React.js",
-      "Firebase",
-      "Bootstrap",
-      "Node.js",
-      "Express.js",
-      "MongoDB"
-    ],
-    "image": "https://user-images.githubusercontent.com/59913782/76703775-5ad73100-66fe-11ea-856a-80bf259c281b.png",
-    "live": "https://usermanagefirebase.web.app/",
-    "repo": "https://github.com/HasnathAhmedTamim/user-management-task4"
-  },
-  {
-    "id": 7,
-    "name": "User List Application",
-    "description": "Dynamic user information display with card view layout, integrated search functionality, and sorting capabilities. Built with modern React patterns and responsive design using Tailwind CSS and Daisy UI.",
-    "technologies": ["React.js", "Tailwind CSS", "Daisy UI", "React Hooks"],
-    "image": "https://i.ibb.co.com/BVwbDqhk/rul.png",
-    "live": "https://react-user-hub-neon.vercel.app/",
-    "repo": "https://github.com/HasnathAhmedTamim/react-user-hub"
-  },
-  {
-    "id": 8,
+    {
+    "id": 9,
     "name": "Rainwater Convention Website",
     "description": "A 4-page event website (Home, FAQs, Registration, Admin) with participant registration form, client-side validation, and admin portal for managing registrations. Features localStorage persistence and SweetAlert2 modals.",
     "technologies": ["React", "Vite", "React Router", "Tailwind CSS", "SweetAlert2", "localStorage"],
     "image": "https://i.ibb.co.com/nqkgFbSj/rainwater.png",
     "live": "https://assignment1-rainwater-website.vercel.app/",
     "repo": "https://github.com/HasnathAhmedTamim/Assignment1_RainwaterWebsite"
+  },
+  {
+    "id": 7,
+    "name": "Task Tracker App!",
+    "description": "A full-stack task management application with user authentication, real-time updates, and a responsive design.",
+    "technologies": ["React", "Node.js", "MongoDB", "JWT", "Vercel"],
+    "image": null,
+    "live": "https://task-tracker-app-opal.vercel.app/",
+    "repo": "https://github.com/HasnathAhmedTamim/DevsNestOPC-TaskTracker-App",
+    "featured": true
+  },
+  {
+    "id": 8,
+    "name": "User List Application",
+    "description": "Dynamic user information display with card view layout, integrated search functionality, and sorting capabilities. Built with modern React patterns and responsive design using Tailwind CSS and Daisy UI.",
+    "technologies": ["React.js", "Tailwind CSS", "Daisy UI", "React Hooks"],
+    "image": "https://i.ibb.co.com/BVwbDqhk/rul.png",
+    "live": "https://react-user-hub-neon.vercel.app/",
+    "repo": "https://github.com/HasnathAhmedTamim/react-user-hub"
   }
-
 ]

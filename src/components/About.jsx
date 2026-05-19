@@ -21,11 +21,9 @@ const About = () => {
             and currently pursuing a Professional Masters in IT from
             Jahangirnagar University. Currently, I&apos;m working as an Intern
             Software Developer at
-            <span className="font-semibold text-primary">
-              {" "}
-              Fiber @ Home
-            </span>
-            , where I develop responsive frontends with Next.js, robust backends, and mobile applications using Android with Kotlin & Jetpack Compose.
+            <span className="font-semibold text-primary"> Fiber @ Home</span>,
+            where I develop responsive frontends with Next.js, robust backends,
+            and mobile applications using Android with Kotlin & Jetpack Compose.
           </p>
 
           <p className="mt-8 md:p-2 p-6  text-justify leading-relaxed text-sm">
@@ -50,7 +48,7 @@ const About = () => {
                 <div className="flex-1">
                   <div className="flex justify-between items-start mb-1">
                     <p className="font-medium text-text-primary">
-                       Software Developer - Fiber @ Home
+                      Software Developer - Fiber @ Home
                     </p>
                     <span className="text-primary font-medium flex items-center gap-1">
                       <FaCalendarAlt className="text-xs" />
@@ -58,7 +56,8 @@ const About = () => {
                     </span>
                   </div>
                   <p className="text-text-secondary">
-                    Next.js, Backend, and Android (Kotlin & Jetpack Compose) development
+                    Next.js, Backend, and Android (Kotlin & Jetpack Compose)
+                    development
                   </p>
                 </div>
               </div>
@@ -109,7 +108,7 @@ const About = () => {
               </button>
             </a>
             <a
-              href="https://drive.google.com/file/d/1d_ha6Th3PlAy6OWkKybXm_IZHCgAnl8c/view?usp=sharing"
+              href="https://drive.google.com/file/d/1VkHVZnFERZsfu9xPQLwBniRTFycPM6CN/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
               download

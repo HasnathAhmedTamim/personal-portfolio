@@ -36,7 +36,7 @@ const Home = () => {
               Get In Touch
             </a>
             <a
-              href="https://drive.google.com/file/d/1d_ha6Th3PlAy6OWkKybXm_IZHCgAnl8c/view?usp=sharing"
+              href="https://drive.google.com/file/d/1VkHVZnFERZsfu9xPQLwBniRTFycPM6CN/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
               className="btn-secondary flex text-white items-center gap-2 hover:bg-gray-300 transition-colors duration-300"
