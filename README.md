@@ -1,5 +1,3 @@
-# Portfolio
-# Hasnath Ahmed Tamim
 
 A personal portfolio built with React + Vite and Tailwind CSS. This template provides a minimal setup to develop a fast, modern frontend with HMR and sensible defaults.
 
