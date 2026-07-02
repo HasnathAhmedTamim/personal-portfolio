@@ -26,17 +26,18 @@ const Home = () => {
           </div>
 
           <h3 className="mb-5 animate-slide-up text-xl font-semibold text-gray-200">
-            👋 Hey! I am Hasnath Ahmed Tamim
+            👋 Hey! I am{" "}
+            <span className="animate-pulse">Hasnath Ahmed Tamim</span>
           </h3>
 
           <h1 className="mb-5 animate-slide-up-delay-1 text-4xl font-bold leading-snug text-gray-100 md:text-6xl md:leading-[76px]">
             I am a{" "}
-            <span className="text-secondary animate-pulse">
+            {/* <span className="text-secondary animate-pulse">
               Junior Software Engineer
             </span>{" "}
-            and{" "}
+            and{" "} */}
             <span className="text-primary animate-pulse">
-              Full Stack Developer
+              Junior Software Engineer
             </span>{" "}
             focused on scalable web products
           </h1>
@@ -51,16 +52,28 @@ const Home = () => {
 
           <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-3 animate-slide-up-delay-3">
             <div className="rounded-2xl border border-white/10 bg-white/5 px-4 py-4 text-left backdrop-blur-sm">
-              <p className="text-xs uppercase tracking-[0.3em] text-gray-400">Focus</p>
-              <p className="mt-2 text-sm font-semibold text-gray-100">Scalable full-stack apps</p>
+              <p className="text-xs uppercase tracking-[0.3em] text-gray-400">
+                Focus
+              </p>
+              <p className="mt-2 text-sm font-semibold text-gray-100">
+                Scalable full-stack apps
+              </p>
             </div>
             <div className="rounded-2xl border border-white/10 bg-white/5 px-4 py-4 text-left backdrop-blur-sm">
-              <p className="text-xs uppercase tracking-[0.3em] text-gray-400">Current Role</p>
-              <p className="mt-2 text-sm font-semibold text-gray-100">Fiber@Home Ltd.</p>
+              <p className="text-xs uppercase tracking-[0.3em] text-gray-400">
+                Current Role
+              </p>
+              <p className="mt-2 text-sm font-semibold text-gray-100">
+                Fiber@Home Ltd.
+              </p>
             </div>
             <div className="rounded-2xl border border-white/10 bg-white/5 px-4 py-4 text-left backdrop-blur-sm">
-              <p className="text-xs uppercase tracking-[0.3em] text-gray-400">Build Style</p>
-              <p className="mt-2 text-sm font-semibold text-gray-100">Fast, clean, responsive</p>
+              <p className="text-xs uppercase tracking-[0.3em] text-gray-400">
+                Build Style
+              </p>
+              <p className="mt-2 text-sm font-semibold text-gray-100">
+                Fast, clean, responsive
+              </p>
             </div>
           </div>
 
@@ -138,8 +151,12 @@ const Home = () => {
               className="relative z-10 w-full max-h-[540px] rounded-[2rem] border border-white/10 object-cover shadow-2xl"
             />
             <div className="absolute bottom-4 left-4 z-20 rounded-2xl border border-white/10 bg-slate-950/80 px-4 py-3 shadow-xl backdrop-blur-md">
-              <p className="text-xs uppercase tracking-[0.28em] text-primary">Available for</p>
-              <p className="mt-1 text-sm font-semibold text-white">Web development projects & collaboration</p>
+              <p className="text-xs uppercase tracking-[0.28em] text-primary">
+                Available for
+              </p>
+              <p className="mt-1 text-sm font-semibold text-white">
+                Web development projects & collaboration
+              </p>
             </div>
           </div>
         </div>
