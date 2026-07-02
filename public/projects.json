@@ -17,7 +17,7 @@
     "description": "A full-stack football prediction web application with real-time leaderboard, knockout qualification logic, role-based admin panel, and automated scoring system.",
     "challenge": "Balancing real-time scoring updates, role-based access, and knockout logic without making the interface hard to use.",
     "futurePlans": "Add richer analytics, better match insights, and expanded tournament management features.",
-    "technologies": ["React", "Node.js", "REST API", "Admin Panel", "MongoDB", "JavaScript"],
+    "technologies": ["React", "Node.js", "REST API", "Admin Panel", "Postgres", "JavaScript"],
     "image": "https://i.ibb.co.com/1JY3sXDr/ff-D.png",
     "live": "https://client-kappa-eight-62.vercel.app/",
     "repo": "https://github.com/HasnathAhmedTamim/fifa-worldcup-prediction-frontend26",
