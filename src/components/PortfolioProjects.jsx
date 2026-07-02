@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { IoLogoGithub } from "react-icons/io5";
 import { FiExternalLink, FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import LoadingSpinner from "./LoadingSpinner";
+import defaultProjectImage from "../assets/project-1.png";
 
 const PortfolioProjects = () => {
   const [projects, setProjects] = useState([]);
@@ -66,7 +68,7 @@ const PortfolioProjects = () => {
   if (loading) {
     return (
       <div
-        className="lg:mx-12 mx-4 my-32 bg-bg-secondary p-4 flex justify-center items-center min-h-[400px]"
+        className="section-shell flex min-h-[400px] items-center justify-center"
         id="projects"
       >
         <LoadingSpinner size="large" />
@@ -76,7 +78,7 @@ const PortfolioProjects = () => {
 
   if (error) {
     return (
-      <div className="lg:mx-12 mx-4 my-32 bg-bg-secondary p-4" id="projects">
+      <div className="section-shell" id="projects">
         <div className="text-center">
           <p className="text-red-500 text-xl mb-4">Error loading projects: {error}</p>
           <button
@@ -92,15 +94,18 @@ const PortfolioProjects = () => {
 
   return (
     <div
-      className="lg:mx-12 mx-4 my-32 bg-bg-secondary p-8 rounded-2xl shadow-xl border border-gray-700/30"
+      className="section-shell"
       id="projects"
     >
-      <div className="flex flex-col md:flex-row justify-between mb-20 gap-8 md:items-center">
-        <div className="text-text-primary">
-          <h2 className="md:text-2xl text-4xl font-bold mb-5">
+      <div className="mb-16 flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
+        <div className="max-w-2xl text-text-primary">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.32em] text-primary/90">
+            Selected Work
+          </p>
+          <h2 className="mb-5 text-4xl font-bold md:text-2xl">
             My Recent Projects
           </h2>
-          <p className="text-text-secondary md:text-sm text-lg">
+          <p className="text-lg text-text-secondary md:text-sm">
             Here are some of my latest projects showcasing my skills in
             full-stack development, from real-time applications to e-commerce
             solutions.
@@ -112,7 +117,7 @@ const PortfolioProjects = () => {
             target="_blank"
             rel="noreferrer"
             href="https://github.com/HasnathAhmedTamim"
-            className="btn-secondary text-white bg-bg-tertiary flex items-center gap-2 hover:bg-primary transition-colors duration-300"
+            className="btn-secondary inline-flex items-center gap-2 bg-bg-tertiary text-white transition-colors duration-300 hover:bg-primary"
           >
             View All Projects <IoLogoGithub className="w-5 h-5" />
           </a>
@@ -120,52 +125,53 @@ const PortfolioProjects = () => {
       </div>
 
       {/* project cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {currentProjects.map((project) => (
           <div
             key={project.id}
-            className={`h-[380px] w-full shadow-lg rounded-lg cursor-pointer hover:scale-105 hover:shadow-md transition-all duration-300 overflow-hidden group flex flex-col ${
+            className={`group flex h-[400px] w-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:border-white/20 hover:shadow-2xl ${
               project.featured ? "ring-2 ring-primary/20" : ""
             }`}
           >
-            <div className="relative overflow-hidden h-40 flex-shrink-0">
+            <div className="relative h-44 flex-shrink-0 overflow-hidden">
               <img
-                src={project.image || "/src/assets/project-placeholder.png"}
+                src={project.image || defaultProjectImage}
                 alt={`${project.name} project screenshot`}
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 onError={(e) => {
-                  e.target.src = "/src/assets/project-placeholder.png";
+                  e.currentTarget.src = defaultProjectImage;
                 }}
               />
               <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               {project.featured && (
-                <div className="absolute top-3 right-3 bg-primary text-white px-2 py-1 rounded-full text-xs font-semibold">
+                <div className="absolute top-3 right-3 rounded-full bg-primary px-2.5 py-1 text-xs font-semibold text-white shadow-lg shadow-primary/30">
                   Featured
                 </div>
               )}
+              <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-slate-950 to-transparent" />
             </div>
-            <div className="p-4 bg-slate-900 flex-1 flex flex-col min-h-0">
-              <h3 className="text-lg font-bold mb-2 text-gray-200 hover:text-primary transition-colors line-clamp-2">
+            <div className="flex min-h-0 flex-1 flex-col p-5">
+              <h3 className="mb-2 line-clamp-2 text-lg font-bold text-gray-100 transition-colors hover:text-primary">
                 {project.name}
               </h3>
-              <p className="text-gray-200 text-justify mb-3 text-sm leading-relaxed flex-1 overflow-hidden">
+              <p className="mb-4 flex-1 overflow-hidden text-justify text-sm leading-relaxed text-gray-300">
                 {project.description}
               </p>
 
               {/* Tech stack */}
               {project.technologies && (
-                <div className="mb-3 flex-shrink-0">
+                <div className="mb-4 flex-shrink-0">
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.slice(0, 3).map((tech, index) => (
                       <span
                         key={index}
-                        className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full font-medium"
+                        className="rounded-full border border-primary/15 bg-primary/10 px-2.5 py-1 text-xs font-medium text-primary"
                       >
                         {tech}
                       </span>
                     ))}
                     {project.technologies.length > 3 && (
-                      <span className="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">
+                      <span className="rounded-full bg-white/10 px-2.5 py-1 text-xs text-gray-300">
                         +{project.technologies.length - 3} more
                       </span>
                     )}
@@ -173,9 +179,9 @@ const PortfolioProjects = () => {
                 </div>
               )}
 
-              <div className="flex gap-3 mt-auto flex-shrink-0">
+              <div className="mt-auto flex flex-wrap gap-3 flex-shrink-0">
                 <a
-                  className="flex items-center gap-2 text-secondary hover:text-secondary/80 font-medium transition-colors text-sm"
+                  className="inline-flex items-center gap-2 rounded-lg border border-white/10 px-3 py-2 text-sm font-medium text-secondary transition-colors hover:border-primary/20 hover:bg-primary/10 hover:text-primary"
                   href={project.repo}
                   target="_blank"
                   rel="noreferrer"
@@ -186,7 +192,7 @@ const PortfolioProjects = () => {
                 </a>
                 {project.live && (
                   <a
-                    className="flex items-center gap-2 text-secondary hover:text-secondary/80 font-medium transition-colors text-sm"
+                    className="inline-flex items-center gap-2 rounded-lg border border-white/10 px-3 py-2 text-sm font-medium text-secondary transition-colors hover:border-primary/20 hover:bg-primary/10 hover:text-primary"
                     href={project.live}
                     target="_blank"
                     rel="noreferrer"
@@ -196,6 +202,13 @@ const PortfolioProjects = () => {
                     Live Demo
                   </a>
                 )}
+                <Link
+                  to={`/projects/${project.id}`}
+                  className="inline-flex items-center gap-2 rounded-lg border border-primary/40 px-3 py-2 text-sm font-medium text-primary transition-colors hover:bg-primary hover:text-white"
+                  aria-label={`View details for ${project.name}`}
+                >
+                  View More / Details
+                </Link>
               </div>
             </div>
           </div>

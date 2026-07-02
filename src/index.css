@@ -72,6 +72,18 @@
 
 /* Custom component styles */
 @layer components {
+  .page-shell {
+    @apply relative isolate overflow-hidden bg-bg-primary min-h-screen text-text-primary font-sans;
+  }
+
+  .section-shell {
+    @apply mx-4 my-28 rounded-[2rem] border border-white/10 bg-bg-secondary/70 px-6 py-10 shadow-2xl backdrop-blur-sm lg:mx-12 lg:px-8 lg:py-12;
+  }
+
+  .surface-card {
+    @apply rounded-2xl border border-white/10 bg-white/5 shadow-lg backdrop-blur-sm;
+  }
+
   .btn-primary {
     @apply bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-lg;
   }
@@ -108,7 +120,7 @@ html {
 
 /* Dark theme body */
 body {
-  @apply bg-gray-900 text-gray-100;
+  @apply bg-bg-primary text-text-primary;
   font-family: 'Inter', sans-serif;
 }
 

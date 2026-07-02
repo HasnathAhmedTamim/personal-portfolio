@@ -11,26 +11,27 @@ import { Link } from "react-scroll";
 
 const Footer = () => {
   return (
-    <div className="bg-bg-secondary text-text-secondary py-16 md:px-12 px-4 border-t border-gray-700">
-      <div className="max-w-6xl mx-auto">
+    <footer className="border-t border-white/10 bg-slate-950 text-text-secondary">
+      <div className="mx-auto max-w-6xl px-4 py-14 md:px-12">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        <div className="mb-12 grid grid-cols-1 gap-8 md:grid-cols-4">
           {/* Brand & Description */}
           <div className="md:col-span-2">
-            <h3 className="text-2xl font-bold text-primary mb-4">
+            <h3 className="mb-4 text-2xl font-bold text-primary">
               Hasnath Ahmed Tamim
             </h3>
-            <p className="text-text-secondary mb-6 leading-relaxed">
-              Full Stack Developer passionate about creating innovative web
-              solutions. Experienced in React.js, Node.js, and modern web
-              technologies. Let&apos;s build something amazing together!
+            <p className="mb-6 max-w-xl leading-relaxed text-text-secondary">
+              Junior Software Engineer building modern full-stack applications
+              with React.js, Next.js, Node.js, TypeScript, and MongoDB.
+              Experienced in responsive frontend work, backend APIs, Android
+              development, and scalable application architecture.
             </p>
-            <div className="flex gap-4">
+            <div className="flex flex-wrap gap-4">
               <a
                 href="https://www.linkedin.com/in/hasnath-ahmed-tamim/"
                 target="_blank"
                 rel="noreferrer"
-                className="bg-primary/20 hover:bg-primary text-white p-3 rounded-full transition-all duration-300 hover:scale-110"
+                className="rounded-full bg-primary/15 p-3 text-white transition-all duration-300 hover:bg-primary hover:scale-110"
                 aria-label="LinkedIn Profile"
               >
                 <FaLinkedin className="w-5 h-5" />
@@ -57,7 +58,7 @@ const Footer = () => {
                 href="https://twitter.com/the_soldierboy"
                 target="_blank"
                 rel="noreferrer"
-                className="bg-primary/20 hover:bg-primary text-white p-3 rounded-full transition-all duration-300 hover:scale-110"
+                className="rounded-full bg-primary/15 p-3 text-white transition-all duration-300 hover:bg-primary hover:scale-110"
                 aria-label="Twitter Profile"
               >
                 <FaTwitter className="w-5 h-5" />
@@ -67,7 +68,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-primary">
+            <h4 className="mb-4 text-lg font-semibold text-primary">
               Quick Links
             </h4>
             <div className="space-y-2">
@@ -102,6 +103,16 @@ const Footer = () => {
                 Explore Projects
               </Link>
               <Link
+                to="contact"
+                spy={true}
+                activeClass="active"
+                smooth={true}
+                offset={-100}
+                className="block text-text-secondary hover:text-primary cursor-pointer transition-colors duration-300"
+              >
+                Contact
+              </Link>
+              <Link
                 to="techskills"
                 spy={true}
                 activeClass="active"
@@ -116,7 +127,7 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-primary">
+            <h4 className="mb-4 text-lg font-semibold text-primary">
               Contact Info
             </h4>
             <div className="space-y-3">
@@ -132,10 +143,10 @@ const Footer = () => {
               <div className="flex items-center gap-3">
                 <FaEnvelope className="w-4 h-4 text-primary" />
                 <a
-                  href="mailto:hasnath.tamim@gmail.com"
+                  href="mailto:hasnath.tamim333@gmail.com"
                   className="text-text-secondary hover:text-primary transition-colors duration-300"
                 >
-                  hasnath.tamim@gmail.com
+                  hasnath.tamim333@gmail.com
                 </a>
               </div>
               <div className="flex items-start gap-3">
@@ -151,10 +162,10 @@ const Footer = () => {
         </div>
 
         {/* Education & Research */}
-        <div className="border-t border-gray-700 pt-8 mb-8">
+        <div className="mb-8 border-t border-white/10 pt-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
-              <h4 className="text-lg font-semibold mb-3 text-primary">
+              <h4 className="mb-3 text-lg font-semibold text-primary">
                 Education
               </h4>
               <div className="space-y-2 text-sm text-text-secondary">
@@ -166,21 +177,26 @@ const Footer = () => {
                 </p>
                 <p>
                   <span className="font-medium">
-                    Professional Masters in IT
+                    Professional Masters of Information Technology
                   </span>{" "}
-                  - Jahangirnagar University (Ongoing)
+                  - Jahangirnagar University (CGPA: 3.94)
                 </p>
               </div>
             </div>
             <div>
-              <h4 className="text-lg font-semibold mb-3 text-primary">
+              <h4 className="mb-3 text-lg font-semibold text-primary">
                 Research
               </h4>
               <div className="text-sm text-text-secondary">
-                <p className="font-medium mb-1">ICO2023 Published Research:</p>
+                <p className="font-medium mb-1">Published Research:</p>
                 <p>
                   &quot;Effective Fault Prediction Techniques for Green Cloud
                   Computing Environments Using Machine Learning&quot;
+                </p>
+                <p className="mt-3 font-medium mb-1">Thesis:</p>
+                <p>
+                  &quot;Automated Toll Collection System and Theft Vehicle
+                  Detection Using Smart Technology&quot;
                 </p>
               </div>
             </div>
@@ -188,7 +204,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom Footer */}
-        <div className="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 md:flex-row">
           <p className="text-text-tertiary text-sm">
             © {new Date().getFullYear()} Hasnath Ahmed Tamim. All rights
             reserved.
@@ -209,7 +225,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

@@ -2,11 +2,27 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import { FaFacebookF, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
-import { Link } from "react-scroll";
-import profileAvatar from "../assets/profile3.png";
+import { Link as ScrollLink } from "react-scroll";
+import { Link as RouterLink, useLocation } from "react-router-dom";
+import profileAvatar from "../assets/phg.png";
+
+const navItems = [
+  { label: "Home", id: "home" },
+  { label: "Tech Skills", id: "techskills" },
+  { label: "About Me", id: "about" },
+  { label: "Projects", id: "projects" },
+  { label: "Contact", id: "contact" },
+];
+
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
+  const { pathname } = useLocation();
+  const isHomePage = pathname === "/";
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
 
   //toggle menu btn
   const toggleMenu = () => {
@@ -24,6 +40,30 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
   }, []);
 
+  const renderNavItem = (item, className) => {
+    if (isHomePage) {
+      return (
+        <ScrollLink
+          to={item.id}
+          spy={true}
+          activeClass="active"
+          smooth={true}
+          offset={-100}
+          className={className}
+          onClick={closeMenu}
+        >
+          {item.label}
+        </ScrollLink>
+      );
+    }
+
+    return (
+      <a href={`/#${item.id}`} className={className} onClick={closeMenu}>
+        {item.label}
+      </a>
+    );
+  };
+
   return (
     <header className="w-full fixed top-0 left-0 right-0 items-center justify-between z-50">
       <nav
@@ -40,54 +80,17 @@ const Navbar = () => {
               alt="Hasnath Ahmed Tamim"
               className="w-10 h-10 rounded-full object-cover border-2 border-primary shadow-md hover:scale-110 transition-transform duration-300"
             />
-            <Link to="/" className="h-10 flex items-center">
-              <button className="block cursor-pointer outlineBtn">
+            <RouterLink to="/" className="h-10 flex items-center" onClick={closeMenu}>
+              <span className="block cursor-pointer outlineBtn">
                 Hasnath Ahmed Tamim
-              </button>
-            </Link>
+              </span>
+            </RouterLink>
           </div>
           {/* menu item */}
           <div className="lg:flex item-center gap-3 hidden  font-semibold">
-            <Link
-              to="home"
-              spy={true}
-              activeClass="active"
-              smooth={true}
-              offset={-100}
-              className="block cursor-pointer outlineBtn"
-            >
-              Home
-            </Link>
-            <Link
-              to="techskills"
-              spy={true}
-              activeClass="active"
-              smooth={true}
-              offset={-100}
-              className="block cursor-pointer outlineBtn"
-            >
-              Tech Skills
-            </Link>
-            <Link
-              to="about"
-              spy={true}
-              activeClass="active"
-              smooth={true}
-              offset={-100}
-              className="block cursor-pointer outlineBtn"
-            >
-              About Me
-            </Link>
-            <Link
-              to="projects"
-              spy={true}
-              activeClass="active"
-              smooth={true}
-              offset={-100}
-              className="block cursor-pointer outlineBtn"
-            >
-              Projects
-            </Link>
+            {navItems.map((item) =>
+              renderNavItem(item, "block cursor-pointer outlineBtn")
+            )}
           </div>
           {/* social links */}
           <div className="lg:flex item-center gap-4 hidden">
@@ -136,30 +139,12 @@ const Navbar = () => {
         {/* menu item */}
         {isMenuOpen && (
           <div className="mt-4 bg-bg-tertiary rounded-lg text-text-primary p-4 border border-gray-600">
-            <Link
-              to="/home"
-              className="block cursor-pointer outlineBtn2 text-text-primary hover:text-primary"
-            >
-              Home
-            </Link>
-            <Link
-              to="/techskills"
-              className="block cursor-pointer outlineBtn2 text-text-primary hover:text-primary"
-            >
-              Tech Skills
-            </Link>
-            <Link
-              to="/about"
-              className="block cursor-pointer outlineBtn2 text-text-primary hover:text-primary"
-            >
-              About Me
-            </Link>
-            <Link
-              to="/projects"
-              className="block cursor-pointer outlineBtn2 text-text-primary hover:text-primary"
-            >
-              Projects
-            </Link>
+            {navItems.map((item) =>
+              renderNavItem(
+                item,
+                "block cursor-pointer outlineBtn2 text-text-primary hover:text-primary"
+              )
+            )}
             <div className="flex justify-center gap-4 mt-4 pt-4 border-t border-gray-600">
               <a
                 href="https://github.com/HasnathAhmedTamim"

@@ -2,8 +2,10 @@
   {
     "id": 1,
     "name": "Personal Portfolio",
-    "description": "Showcase of my projects and skills as a web developer.",
-    "technologies": ["React", "Tailwind CSS", "JavaScript"],
+    "description": "A responsive portfolio website showcasing my projects, technical skills, experience, and professional profile.",
+    "challenge": "Balancing a polished visual presentation with a responsive layout while keeping the portfolio lightweight and fast.",
+    "futurePlans": "Add motion-driven case studies, richer filters, and an easier content update flow for new projects.",
+    "technologies": ["React", "Tailwind CSS", "JavaScript", "React Router"],
     "image": "https://i.ibb.co.com/Sw2jJzwQ/newpp.png",
     "live": "https://personal-portfolio-pied-zeta.vercel.app/",
     "repo": "https://github.com/HasnathAhmedTamim/personal-portfolio",
@@ -11,8 +13,22 @@
   },
   {
     "id": 2,
+    "name": "FIFA Prediction League",
+    "description": "A full-stack football prediction web application with real-time leaderboard, knockout qualification logic, role-based admin panel, and automated scoring system.",
+    "challenge": "Balancing real-time scoring updates, role-based access, and knockout logic without making the interface hard to use.",
+    "futurePlans": "Add richer analytics, better match insights, and expanded tournament management features.",
+    "technologies": ["React", "Node.js", "REST API", "Admin Panel", "MongoDB", "JavaScript"],
+    "image": "https://i.ibb.co.com/1JY3sXDr/ff-D.png",
+    "live": "https://client-kappa-eight-62.vercel.app/",
+    "repo": "https://github.com/HasnathAhmedTamim/fifa-worldcup-prediction-frontend26",
+    "featured": true
+  },
+  {
+    "id": 9,
     "name": "Marvel Rivals Crosshair Showcase",
     "description": "Showcase of Marvel characters with crosshair effects.",
+    "challenge": "Creating a playful visual showcase without sacrificing layout stability across different screen sizes.",
+    "futurePlans": "Expand the showcase with more interactive controls, animation presets, and stronger accessibility states.",
     "technologies": [
       "React.js",
       "Tailwind CSS",
@@ -30,6 +46,8 @@
     "id": 3,
     "name": "FC26 Auction",
     "description": "Real-time football player auction platform built with Next.js App Router, NextAuth, MongoDB, and Socket.IO. Features manager registration, live auctions with real-time bidding, lineup management, achievements tracking, admin controls, and tournament fixtures with full role-based access control.",
+    "challenge": "Synchronizing live auction updates and role-based behaviors without making the interface feel complex.",
+    "futurePlans": "Add richer analytics, tournament summaries, and more advanced admin workflows.",
     "technologies": ["Next.js 16", "React 19", "NextAuth", "MongoDB", "Socket.IO", "Tailwind CSS", "TypeScript", "Zod", "Vitest", "ESLint"],
     "image": "https://i.ibb.co.com/dJ2BNKDN/fc26.png",
     "live": "https://fc26-test-auctions.vercel.app/",
@@ -38,18 +56,22 @@
   },
   {
     "id": 4,
-    "name": "Demo-Cafe",
-    "description": "ArenaX — a gaming & esports e-commerce platform built with Next.js 16 and TypeScript. Features product catalog, persistent cart, validated checkout (Zod), PDF receipts, and a modular feature structure.",
-    "technologies": ["Next.js 16", "TypeScript", "Tailwind CSS", "Radix UI", "Zustand", "React Hook Form", "Zod", "Framer Motion"],
-    "image": "https://i.ibb.co.com/LDJbt6hk/arenax.png",
-    "live": "https://demo-cafe-seven.vercel.app/",
-    "repo": "https://github.com/HasnathAhmedTamim/Demo-Cafe",
+    "name": "Task Tracker App",
+    "description": "A full-stack task management application with JWT authentication, real-time updates, and a responsive user interface.",
+    "challenge": "Designing a simple task flow that still supported live updates and authenticated access.",
+    "futurePlans": "Add drag-and-drop task organization, reminders, and richer team collaboration features.",
+    "technologies": ["React", "Node.js", "MongoDB", "JWT", "Vercel"],
+    "image": null,
+    "live": "https://task-tracker-app-opal.vercel.app/",
+    "repo": "https://github.com/HasnathAhmedTamim/DevsNestOPC-TaskTracker-App",
     "featured": true
   },
   {
     "id": 5,
     "name": "FPL News Portal",
     "description": "Your ultimate hub for all things Fantasy Premier League! Features real-time FPL news updates, points calculator, player performance analysis, and fixture difficulty. Built with modern technologies and mobile-first responsive design with glassmorphism UI and custom dark/light mode transitions.",
+    "challenge": "Presenting fast-changing sports data in a clean interface without overwhelming the user.",
+    "futurePlans": "Add personalized dashboards, stronger filtering, and more visual insights for player comparisons.",
     "technologies": [
       "Next.js 15",
       "React 19",
@@ -66,7 +88,9 @@
   {
     "id": 6,
     "name": "Bookshop Management System",
-    "description": "Responsive e-commerce book shop with React frontend and Node.js backend. Features include book inventory management, user authentication, and RESTful API integration with MongoDB database.",
+    "description": "A full-stack online bookstore with inventory management, REST APIs, Firebase authentication, and MongoDB integration.",
+    "challenge": "Keeping inventory, authentication, and UI interactions consistent across both client and backend layers.",
+    "futurePlans": "Add order tracking, wishlists, and a more detailed admin analytics dashboard.",
     "technologies": [
       "React.js",
       "Context API",
@@ -81,28 +105,22 @@
     "repo": "https://github.com/HasnathAhmedTamim/simple-bookshop-management-client"
   },
     {
-    "id": 9,
+    "id": 7,
     "name": "Rainwater Convention Website",
     "description": "A 4-page event website (Home, FAQs, Registration, Admin) with participant registration form, client-side validation, and admin portal for managing registrations. Features localStorage persistence and SweetAlert2 modals.",
+    "challenge": "Handling form validation and admin workflows while keeping the site lightweight and fast to navigate.",
+    "futurePlans": "Add email notifications, better analytics, and a richer admin experience.",
     "technologies": ["React", "Vite", "React Router", "Tailwind CSS", "SweetAlert2", "localStorage"],
     "image": "https://i.ibb.co.com/nqkgFbSj/rainwater.png",
     "live": "https://assignment1-rainwater-website.vercel.app/",
     "repo": "https://github.com/HasnathAhmedTamim/Assignment1_RainwaterWebsite"
   },
   {
-    "id": 7,
-    "name": "Task Tracker App!",
-    "description": "A full-stack task management application with user authentication, real-time updates, and a responsive design.",
-    "technologies": ["React", "Node.js", "MongoDB", "JWT", "Vercel"],
-    "image": null,
-    "live": "https://task-tracker-app-opal.vercel.app/",
-    "repo": "https://github.com/HasnathAhmedTamim/DevsNestOPC-TaskTracker-App",
-    "featured": true
-  },
-  {
     "id": 8,
     "name": "User List Application",
     "description": "Dynamic user information display with card view layout, integrated search functionality, and sorting capabilities. Built with modern React patterns and responsive design using Tailwind CSS and Daisy UI.",
+    "challenge": "Making search and sort interactions feel responsive while keeping the interface lightweight.",
+    "futurePlans": "Add server-side filtering, saved preferences, and more advanced filtering controls.",
     "technologies": ["React.js", "Tailwind CSS", "Daisy UI", "React Hooks"],
     "image": "https://i.ibb.co.com/BVwbDqhk/rul.png",
     "live": "https://react-user-hub-neon.vercel.app/",

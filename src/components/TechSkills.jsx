@@ -5,7 +5,11 @@ import {
   FaJs, 
   FaHtml5, 
   FaCss3Alt, 
-  FaGithub
+  FaGithub,
+  FaDocker,
+  FaBootstrap,
+  FaTools,
+  FaDatabase
 } from "react-icons/fa";
 import { 
   SiNextdotjs, 
@@ -13,7 +17,15 @@ import {
   SiTailwindcss, 
   SiExpress, 
   SiMongodb,
-  SiFirebase
+  SiFirebase,
+  SiRedux,
+  SiPostgresql,
+  SiMysql,
+  SiVite,
+  SiPostman,
+  SiDocker,
+  SiMongoose,
+  SiJavascript
 } from "react-icons/si";
 import { 
   BsPerson, 
@@ -21,7 +33,9 @@ import {
   BsPeople, 
   BsChatDots, 
   BsClock, 
-  BsLightning 
+  BsLightning,
+  BsShieldCheck,
+  BsLayers
 } from "react-icons/bs";
 
 const skillCategories = [
@@ -29,10 +43,11 @@ const skillCategories = [
     title: "Frontend",
     skills: [
       { name: "React.js", icon: FaReact, color: "text-blue-500" },
-      { name: "Next.js 14", icon: SiNextdotjs, color: "text-gray-200" },
+      { name: "Next.js", icon: SiNextdotjs, color: "text-gray-200" },
       { name: "JavaScript", icon: FaJs, color: "text-yellow-500" },
       { name: "TypeScript", icon: SiTypescript, color: "text-blue-600" },
       { name: "Tailwind CSS", icon: SiTailwindcss, color: "text-cyan-500" },
+      { name: "Bootstrap", icon: FaBootstrap, color: "text-purple-500" },
       { name: "HTML5", icon: FaHtml5, color: "text-orange-500" },
       { name: "CSS3", icon: FaCss3Alt, color: "text-blue-500" }
     ]
@@ -43,8 +58,23 @@ const skillCategories = [
       { name: "Node.js", icon: FaNodeJs, color: "text-green-500" },
       { name: "Express.js", icon: SiExpress, color: "text-gray-200" },
       { name: "MongoDB", icon: SiMongodb, color: "text-green-600" },
+      { name: "Mongoose", icon: FaDatabase, color: "text-emerald-500" },
       { name: "Firebase", icon: SiFirebase, color: "text-orange-500" },
+      { name: "PostgreSQL", icon: SiPostgresql, color: "text-sky-500" },
+      { name: "MySQL", icon: SiMysql, color: "text-orange-400" },
+      { name: "Neon DB", icon: FaDatabase, color: "text-fuchsia-500" },
       { name: "Git & GitHub", icon: FaGithub, color: "text-gray-200" }
+    ]
+  },
+  {
+    title: "Tools & Platforms",
+    skills: [
+      { name: "Docker", icon: FaDocker, color: "text-sky-500" },
+      { name: "Vite", icon: SiVite, color: "text-violet-400" },
+      { name: "Postman", icon: SiPostman, color: "text-orange-500" },
+      { name: "VS Code", icon: FaTools, color: "text-blue-400" },
+      { name: "Git", icon: FaGithub, color: "text-gray-200" },
+      { name: "Beekeeper Studio", icon: BsLayers, color: "text-cyan-400" }
     ]
   },
   {
@@ -55,55 +85,66 @@ const skillCategories = [
       { name: "Teamwork", icon: BsPeople, color: "text-indigo-500" },
       { name: "Communication", icon: BsChatDots, color: "text-blue-500" },
       { name: "Time Management", icon: BsClock, color: "text-green-500" },
-      { name: "Adaptability", icon: BsLightning, color: "text-yellow-500" }
+      { name: "Adaptability", icon: BsLightning, color: "text-yellow-500" },
+      { name: "MVC / RBAC / JWT", icon: BsShieldCheck, color: "text-emerald-400" }
     ]
   }
 ];
 
 const TechSkills = () => {
   return (
-    <div className="lg:px-12 px-4 my-32 bg-bg-primary" id="techskills">
-      <div className="mb-20 text-center">
-       
-        <h2 className="md:text-5xl text-4xl text-text-primary font-bold mb-5">
-          Technical Expertise
-        </h2>
-        <p className="text-text-secondary text-lg max-w-3xl mx-auto">
-          A comprehensive overview of my technical skills and professional competencies 
-          gained through education, hands-on projects, and industry experience.
-        </p>
-      </div>
+    <section className="relative my-32 overflow-hidden lg:px-12 px-4" id="techskills">
+      <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-slate-950/60 via-bg-primary to-slate-950/40" />
+      <div className="pointer-events-none absolute -left-24 top-10 -z-10 h-72 w-72 rounded-full bg-primary/10 blur-3xl" />
+      <div className="pointer-events-none absolute -right-24 bottom-0 -z-10 h-72 w-72 rounded-full bg-secondary/10 blur-3xl" />
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-        {skillCategories.map((category, categoryIndex) => (
-          <div 
-            key={categoryIndex}
-            className="bg-bg-secondary rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 border border-gray-700"
-          >
-            <h3 className="text-2xl font-bold text-text-primary mb-8 text-center border-b border-gray-700 pb-4">
-              {category.title}
-            </h3>
-            
-            <div className="grid grid-cols-2 gap-6">
-              {category.skills.map((skill, skillIndex) => {
-                const IconComponent = skill.icon;
-                return (
-                  <div 
-                    key={skillIndex}
-                    className="flex flex-col items-center p-4 rounded-lg hover:bg-bg-tertiary transition-all duration-300 group cursor-pointer"
-                  >
-                    <div className={`text-4xl mb-3 ${skill.color} group-hover:scale-110 transition-transform duration-300`}>
-                      <IconComponent />
+      <div className="section-shell">
+        <div className="mb-16 text-center">
+         
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-primary/90">
+            Technical Expertise
+          </p>
+       
+          <h2 className="mb-5 text-4xl font-bold text-text-primary md:text-5xl">
+            Technical Expertise
+          </h2>
+          <p className="mx-auto max-w-3xl text-lg text-text-secondary">
+            A comprehensive overview of my technical skills and professional competencies 
+            gained through education, hands-on projects, and industry experience.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 xl:grid-cols-4">
+          {skillCategories.map((category, categoryIndex) => (
+            <div 
+              key={categoryIndex}
+              className="surface-card p-7 transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:shadow-2xl"
+            >
+              <h3 className="mb-7 border-b border-white/10 pb-4 text-center text-2xl font-bold text-text-primary">
+                {category.title}
+              </h3>
+              
+              <div className="grid grid-cols-2 gap-4">
+                {category.skills.map((skill, skillIndex) => {
+                  const IconComponent = skill.icon;
+                  return (
+                    <div 
+                      key={skillIndex}
+                      className="group flex flex-col items-center rounded-2xl border border-white/5 bg-white/5 p-4 text-center transition-all duration-300 hover:border-white/20 hover:bg-white/10"
+                    >
+                      <div className={`mb-3 text-4xl ${skill.color} transition-transform duration-300 group-hover:scale-110`}>
+                        <IconComponent />
+                      </div>
+                      <span className="text-sm font-medium text-text-primary transition-colors duration-300 group-hover:text-primary">
+                        {skill.name}
+                      </span>
                     </div>
-                    <span className="text-sm font-medium text-center text-text-primary group-hover:text-primary transition-colors duration-300">
-                      {skill.name}
-                    </span>
-                  </div>
-                );
-              })}
+                  );
+                })}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
 
       {/* Experience Highlight */}
@@ -131,7 +172,7 @@ const TechSkills = () => {
           </div>
         </div>
       </div> */}
-    </div>
+    </section>
   );
 };
 
