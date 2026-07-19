@@ -8,9 +8,10 @@ import {
 } from "react-icons/fa";
 
 const resumeViewUrl =
-  "https://drive.google.com/file/d/1VkHVZnFERZsfu9xPQLwBniRTFycPM6CN/view?usp=sharing";
+  "https://drive.google.com/file/d/1r_Ke-2wmxo3O-nGkdhmx-woqUvYiS-Co/view?usp=sharing";
+
 const resumeDownloadUrl =
-  "https://drive.google.com/uc?export=download&id=1VkHVZnFERZsfu9xPQLwBniRTFycPM6CN";
+  "https://drive.google.com/uc?export=download&id=1r_Ke-2wmxo3O-nGkdhmx-woqUvYiS-Co";
 
 const About = () => {
   return (
