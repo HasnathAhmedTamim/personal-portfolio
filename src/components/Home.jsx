@@ -3,10 +3,10 @@ import { HiDownload } from "react-icons/hi";
 import heroPhoto from "../assets/photograph.jpg";
 
 const resumeViewUrl =
-  "https://drive.google.com/file/d/1r_Ke-2wmxo3O-nGkdhmx-woqUvYiS-Co/view?usp=sharing";
+  "https://drive.google.com/file/d/1KYyiBivlo0a4HdU9RAZKBviHQZCGfAT3/view";
 
 const resumeDownloadUrl =
-  "https://drive.google.com/uc?export=download&id=1r_Ke-2wmxo3O-nGkdhmx-woqUvYiS-Co";
+  "https://drive.google.com/uc?export=download&id=1KYyiBivlo0a4HdU9RAZKBviHQZCGfAT3";
 
 const Home = () => {
   return (
